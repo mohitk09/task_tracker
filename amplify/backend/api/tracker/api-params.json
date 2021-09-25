@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/getdetails",
+      "lambdaFunction": "tracktasks",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/getdetails"
+    }
+  ],
+  "resourceName": "tracker",
+  "apiName": "tracker",
+  "functionArns": [
+    {
+      "lambdaFunction": "tracktasks"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-tasktracker-dev-195446-authRole",
+    "unAuthRoleName": "amplify-tasktracker-dev-195446-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "tracktasks",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
