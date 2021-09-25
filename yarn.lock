@@ -2,6 +2,1892 @@
 # yarn lockfile v1
 
 
+"@aws-amplify/analytics@5.0.18":
+  version "5.0.18"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/analytics/-/analytics-5.0.18.tgz#9d13eade42a17e6a3fc4c7bdd053de86125b4714"
+  integrity sha1-nRPq3kKhfmo/xMe90FPehhJbRxQ=
+  dependencies:
+    "@aws-amplify/cache" "4.0.20"
+    "@aws-amplify/core" "4.3.0"
+    "@aws-sdk/client-firehose" "3.6.1"
+    "@aws-sdk/client-kinesis" "3.6.1"
+    "@aws-sdk/client-personalize-events" "3.6.1"
+    "@aws-sdk/client-pinpoint" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    lodash "^4.17.20"
+    uuid "^3.2.1"
+
+"@aws-amplify/api-graphql@2.2.7":
+  version "2.2.7"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/api-graphql/-/api-graphql-2.2.7.tgz#eade498046abcf0a7ac8e1b78a4c510cb81efc83"
+  integrity sha1-6t5JgEarzwp6yOG3ikxRDLge/IM=
+  dependencies:
+    "@aws-amplify/api-rest" "2.0.18"
+    "@aws-amplify/auth" "4.3.8"
+    "@aws-amplify/cache" "4.0.20"
+    "@aws-amplify/core" "4.3.0"
+    "@aws-amplify/pubsub" "4.1.10"
+    graphql "14.0.0"
+    uuid "^3.2.1"
+    zen-observable-ts "0.8.19"
+
+"@aws-amplify/api-rest@2.0.18":
+  version "2.0.18"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/api-rest/-/api-rest-2.0.18.tgz#23c9bf22278ed87540efbd9cd5bc5b4112750996"
+  integrity sha1-I8m/IieO2HVA772c1bxbQRJ1CZY=
+  dependencies:
+    "@aws-amplify/core" "4.3.0"
+    axios "0.21.4"
+
+"@aws-amplify/api@4.0.18":
+  version "4.0.18"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/api/-/api-4.0.18.tgz#352aff2497325221c468e1b479927a40a397a60e"
+  integrity sha1-NSr/JJcyUiHEaOG0eZJ6QKOXpg4=
+  dependencies:
+    "@aws-amplify/api-graphql" "2.2.7"
+    "@aws-amplify/api-rest" "2.0.18"
+
+"@aws-amplify/auth@4.3.8":
+  version "4.3.8"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/auth/-/auth-4.3.8.tgz#46386535c1460c7e8f604c1de4dad15423e1e86d"
+  integrity sha1-RjhlNcFGDH6PYEwd5NrRVCPh6G0=
+  dependencies:
+    "@aws-amplify/cache" "4.0.20"
+    "@aws-amplify/core" "4.3.0"
+    amazon-cognito-identity-js "5.1.2"
+    crypto-js "^4.1.1"
+
+"@aws-amplify/cache@4.0.20":
+  version "4.0.20"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/cache/-/cache-4.0.20.tgz#813066dc651e52fc93e706d7ca304af95f509722"
+  integrity sha1-gTBm3GUeUvyT5wbXyjBK+V9QlyI=
+  dependencies:
+    "@aws-amplify/core" "4.3.0"
+
+"@aws-amplify/core@4.3.0":
+  version "4.3.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/core/-/core-4.3.0.tgz#9167c79f9ebc715342dc78a7873a426e28a71bae"
+  integrity sha1-kWfHn568cVNC3HinhzpCbiinG64=
+  dependencies:
+    "@aws-crypto/sha256-js" "1.0.0-alpha.0"
+    "@aws-sdk/client-cloudwatch-logs" "3.6.1"
+    "@aws-sdk/client-cognito-identity" "3.6.1"
+    "@aws-sdk/credential-provider-cognito-identity" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-hex-encoding" "3.6.1"
+    universal-cookie "^4.0.4"
+    zen-observable-ts "0.8.19"
+
+"@aws-amplify/datastore@3.4.6":
+  version "3.4.6"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/datastore/-/datastore-3.4.6.tgz#a038d21a38e5d0ad9fcddeadd09435de92d1bf21"
+  integrity sha1-oDjSGjjl0K2fzd6t0JQ13pLRvyE=
+  dependencies:
+    "@aws-amplify/api" "4.0.18"
+    "@aws-amplify/auth" "4.3.8"
+    "@aws-amplify/core" "4.3.0"
+    "@aws-amplify/pubsub" "4.1.10"
+    amazon-cognito-identity-js "5.1.2"
+    idb "5.0.6"
+    immer "9.0.6"
+    ulid "2.3.0"
+    uuid "3.3.2"
+    zen-observable-ts "0.8.19"
+    zen-push "0.2.1"
+
+"@aws-amplify/geo@1.1.0":
+  version "1.1.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/geo/-/geo-1.1.0.tgz#cee53652fb7ee246e7af53e095fc8ecb4c90f978"
+  integrity sha1-zuU2Uvt+4kbnr1PglfyOy0yQ+Xg=
+  dependencies:
+    "@aws-amplify/core" "4.3.0"
+    "@aws-sdk/client-location" "3.22.0"
+    camelcase-keys "6.2.2"
+
+"@aws-amplify/interactions@4.0.18":
+  version "4.0.18"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/interactions/-/interactions-4.0.18.tgz#2adea0214761eecf9d74cca3e310a329d07ae842"
+  integrity sha1-Kt6gIUdh7s+ddMyj4xCjKdB66EI=
+  dependencies:
+    "@aws-amplify/core" "4.3.0"
+    "@aws-sdk/client-lex-runtime-service" "3.6.1"
+
+"@aws-amplify/predictions@4.0.18":
+  version "4.0.18"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/predictions/-/predictions-4.0.18.tgz#30f86c653e9c66a688ea2f91b7df21f0c11bb940"
+  integrity sha1-MPhsZT6cZqaI6i+Rt98h8MEbuUA=
+  dependencies:
+    "@aws-amplify/core" "4.3.0"
+    "@aws-amplify/storage" "4.4.1"
+    "@aws-sdk/client-comprehend" "3.6.1"
+    "@aws-sdk/client-polly" "3.6.1"
+    "@aws-sdk/client-rekognition" "3.6.1"
+    "@aws-sdk/client-textract" "3.6.1"
+    "@aws-sdk/client-translate" "3.6.1"
+    "@aws-sdk/eventstream-marshaller" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    uuid "^3.2.1"
+
+"@aws-amplify/pubsub@4.1.10":
+  version "4.1.10"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/pubsub/-/pubsub-4.1.10.tgz#887249d72e02c001c9e4f609b08886a085de1966"
+  integrity sha1-iHJJ1y4CwAHJ5PYJsIiGoIXeGWY=
+  dependencies:
+    "@aws-amplify/auth" "4.3.8"
+    "@aws-amplify/cache" "4.0.20"
+    "@aws-amplify/core" "4.3.0"
+    graphql "14.0.0"
+    paho-mqtt "^1.1.0"
+    uuid "^3.2.1"
+    zen-observable-ts "0.8.19"
+
+"@aws-amplify/storage@4.4.1":
+  version "4.4.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/storage/-/storage-4.4.1.tgz#10ba5bd6db39d282d1488a0cfd36be9881b58121"
+  integrity sha1-ELpb1ts50oLRSIoM/Ta+mIG1gSE=
+  dependencies:
+    "@aws-amplify/core" "4.3.0"
+    "@aws-sdk/client-s3" "3.6.1"
+    "@aws-sdk/s3-request-presigner" "3.6.1"
+    "@aws-sdk/util-create-request" "3.6.1"
+    "@aws-sdk/util-format-url" "3.6.1"
+    axios "0.21.4"
+    events "^3.1.0"
+    sinon "^7.5.0"
+
+"@aws-amplify/ui-components@1.8.1":
+  version "1.8.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/ui-components/-/ui-components-1.8.1.tgz#150457dc1fb9debbf5201bb6095b2288f9d2eda2"
+  integrity sha1-FQRX3B+53rv1IBu2CVsiiPnS7aI=
+  dependencies:
+    qrcode "^1.4.4"
+    uuid "^8.2.0"
+
+"@aws-amplify/ui-react@^1.2.18":
+  version "1.2.18"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/ui-react/-/ui-react-1.2.18.tgz#c2911b6e6573b704b7c8c3ab9926dfebad6e431b"
+  integrity sha1-wpEbbmVztwS3yMOrmSbf661uQxs=
+  dependencies:
+    "@aws-amplify/ui-components" "1.8.1"
+
+"@aws-amplify/ui@2.0.3":
+  version "2.0.3"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/ui/-/ui-2.0.3.tgz#7a88a416942aedbc6a6ea9850a2c98693c80340a"
+  integrity sha1-eoikFpQq7bxqbqmFCiyYaTyANAo=
+
+"@aws-amplify/xr@3.0.18":
+  version "3.0.18"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-amplify/xr/-/xr-3.0.18.tgz#b22b552593458ee53dc219d096a1a8cd3f222211"
+  integrity sha1-sitVJZNFjuU9whnQlqGozT8iIhE=
+  dependencies:
+    "@aws-amplify/core" "4.3.0"
+
+"@aws-crypto/crc32@^1.0.0":
+  version "1.2.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-crypto/crc32/-/crc32-1.2.1.tgz#c019f8c4bd6a55baec0c5692722d4fcb27809e6b"
+  integrity sha1-wBn4xL1qVbrsDFaSci1PyyeAnms=
+  dependencies:
+    "@aws-crypto/util" "^1.2.1"
+    "@aws-sdk/types" "^3.1.0"
+    tslib "^1.11.1"
+
+"@aws-crypto/ie11-detection@^1.0.0":
+  version "1.0.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-crypto/ie11-detection/-/ie11-detection-1.0.0.tgz#d3a6af29ba7f15458f79c41d1cd8cac3925e726a"
+  integrity sha1-06avKbp/FUWPecQdHNjKw5Jecmo=
+  dependencies:
+    tslib "^1.11.1"
+
+"@aws-crypto/sha256-browser@^1.0.0", "@aws-crypto/sha256-browser@^1.1.0":
+  version "1.2.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-crypto/sha256-browser/-/sha256-browser-1.2.1.tgz#b75b89a63039f97667e61ac92c9c4ee04f35fec0"
+  integrity sha1-t1uJpjA5+XZn5hrJLJxO4E81/sA=
+  dependencies:
+    "@aws-crypto/ie11-detection" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.2.1"
+    "@aws-crypto/supports-web-crypto" "^1.0.0"
+    "@aws-crypto/util" "^1.2.1"
+    "@aws-sdk/types" "^3.1.0"
+    "@aws-sdk/util-locate-window" "^3.0.0"
+    tslib "^1.11.1"
+
+"@aws-crypto/sha256-js@1.0.0-alpha.0":
+  version "1.0.0-alpha.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-crypto/sha256-js/-/sha256-js-1.0.0-alpha.0.tgz#1146f6fa823001a9065ce60db5bf1afcc7c1cc3a"
+  integrity sha1-EUb2+oIwAakGXOYNtb8a/MfBzDo=
+  dependencies:
+    "@aws-sdk/types" "^1.0.0-alpha.0"
+    "@aws-sdk/util-utf8-browser" "^1.0.0-alpha.0"
+    tslib "^1.9.3"
+
+"@aws-crypto/sha256-js@^1.0.0", "@aws-crypto/sha256-js@^1.1.0", "@aws-crypto/sha256-js@^1.2.1":
+  version "1.2.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-crypto/sha256-js/-/sha256-js-1.2.1.tgz#88c6c0cfff7f269b21740c71157987837da502df"
+  integrity sha1-iMbAz/9/JpshdAxxFXmHg32lAt8=
+  dependencies:
+    "@aws-crypto/util" "^1.2.1"
+    "@aws-sdk/types" "^3.1.0"
+    tslib "^1.11.1"
+
+"@aws-crypto/supports-web-crypto@^1.0.0":
+  version "1.0.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-crypto/supports-web-crypto/-/supports-web-crypto-1.0.0.tgz#c40901bc17ac1e875e248df16a2b47ad8bfd9a93"
+  integrity sha1-xAkBvBesHodeJI3xaitHrYv9mpM=
+  dependencies:
+    tslib "^1.11.1"
+
+"@aws-crypto/util@^1.2.1":
+  version "1.2.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-crypto/util/-/util-1.2.1.tgz#9bd31a37843aca63829a8fcae6b897283bf6ff12"
+  integrity sha1-m9MaN4Q6ymOCmo/K5riXKDv2/xI=
+  dependencies:
+    "@aws-sdk/types" "^3.1.0"
+    "@aws-sdk/util-utf8-browser" "^3.0.0"
+    tslib "^1.11.1"
+
+"@aws-sdk/abort-controller@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/abort-controller/-/abort-controller-3.22.0.tgz#96b1b52176554d2bca354c3cdc142d9c229a3d3c"
+  integrity sha1-lrG1IXZVTSvKNUw83BQtnCKaPTw=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/abort-controller@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/abort-controller/-/abort-controller-3.6.1.tgz#75812875bbef6ad17e0e3a6d96aab9df636376f9"
+  integrity sha1-dYEodbvvatF+Djptlqq532Njdvk=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/chunked-blob-reader-native@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/chunked-blob-reader-native/-/chunked-blob-reader-native-3.6.1.tgz#21c2c8773c3cd8403c2a953fd0e9e4f69c120214"
+  integrity sha1-IcLIdzw82EA8KpU/0Onk9pwSAhQ=
+  dependencies:
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/chunked-blob-reader@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/chunked-blob-reader/-/chunked-blob-reader-3.6.1.tgz#63363025dcecc2f9dd47ae5c282d79c01b327d82"
+  integrity sha1-YzYwJdzswvndR65cKC15wBsyfYI=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/client-cloudwatch-logs@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-cloudwatch-logs/-/client-cloudwatch-logs-3.6.1.tgz#5e8dba495a2ba9a901b0a1a2d53edef8bd452398"
+  integrity sha1-Xo26SVorqakBsKGi1T7e+L1FI5g=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-cognito-identity@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-cognito-identity/-/client-cognito-identity-3.6.1.tgz#36992a4fef7eff1f2b1dbee30850e30ebdfc15bb"
+  integrity sha1-NpkqT+9+/x8rHb7jCFDjDr38Fbs=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-comprehend@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-comprehend/-/client-comprehend-3.6.1.tgz#d640d510b49feafa94ac252cdd7942cbe5537249"
+  integrity sha1-1kDVELSf6vqUrCUs3XlCy+VTckk=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+    uuid "^3.0.0"
+
+"@aws-sdk/client-firehose@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-firehose/-/client-firehose-3.6.1.tgz#87a8ef0c18267907b3ce712e6d3de8f36b0a7c7b"
+  integrity sha1-h6jvDBgmeQezznEubT3o82sKfHs=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-kinesis@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-kinesis/-/client-kinesis-3.6.1.tgz#48583cc854f9108bc8ff6168005d9a05b24bae31"
+  integrity sha1-SFg8yFT5EIvI/2FoAF2aBbJLrjE=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/eventstream-serde-browser" "3.6.1"
+    "@aws-sdk/eventstream-serde-config-resolver" "3.6.1"
+    "@aws-sdk/eventstream-serde-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    "@aws-sdk/util-waiter" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-lex-runtime-service@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-lex-runtime-service/-/client-lex-runtime-service-3.6.1.tgz#43290057858a60b7465989d63c2824512e8166d2"
+  integrity sha1-QykAV4WKYLdGWYnWPCgkUS6BZtI=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-location@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-location/-/client-location-3.22.0.tgz#a6d51a20cce50770d4c35d413b05da36fef2e138"
+  integrity sha1-ptUaIMzlB3DUw11BOwXaNv7y4Tg=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.1.0"
+    "@aws-crypto/sha256-js" "^1.1.0"
+    "@aws-sdk/client-sts" "3.22.0"
+    "@aws-sdk/config-resolver" "3.22.0"
+    "@aws-sdk/credential-provider-node" "3.22.0"
+    "@aws-sdk/fetch-http-handler" "3.22.0"
+    "@aws-sdk/hash-node" "3.22.0"
+    "@aws-sdk/invalid-dependency" "3.22.0"
+    "@aws-sdk/middleware-content-length" "3.22.0"
+    "@aws-sdk/middleware-host-header" "3.22.0"
+    "@aws-sdk/middleware-logger" "3.22.0"
+    "@aws-sdk/middleware-retry" "3.22.0"
+    "@aws-sdk/middleware-serde" "3.22.0"
+    "@aws-sdk/middleware-signing" "3.22.0"
+    "@aws-sdk/middleware-stack" "3.22.0"
+    "@aws-sdk/middleware-user-agent" "3.22.0"
+    "@aws-sdk/node-config-provider" "3.22.0"
+    "@aws-sdk/node-http-handler" "3.22.0"
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/smithy-client" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/url-parser" "3.22.0"
+    "@aws-sdk/util-base64-browser" "3.22.0"
+    "@aws-sdk/util-base64-node" "3.22.0"
+    "@aws-sdk/util-body-length-browser" "3.22.0"
+    "@aws-sdk/util-body-length-node" "3.22.0"
+    "@aws-sdk/util-user-agent-browser" "3.22.0"
+    "@aws-sdk/util-user-agent-node" "3.22.0"
+    "@aws-sdk/util-utf8-browser" "3.22.0"
+    "@aws-sdk/util-utf8-node" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-personalize-events@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-personalize-events/-/client-personalize-events-3.6.1.tgz#86942bb64108cfc2f6c31a8b54aab6fa7f7be00f"
+  integrity sha1-hpQrtkEIz8L2wxqLVKq2+n974A8=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-pinpoint@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-pinpoint/-/client-pinpoint-3.6.1.tgz#6b93f46475ae2667d77053be51ea62f52e330155"
+  integrity sha1-a5P0ZHWuJmfXcFO+Uepi9S4zAVU=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-polly@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-polly/-/client-polly-3.6.1.tgz#869deb186e57fca29737bfa7af094599d7879841"
+  integrity sha1-hp3rGG5X/KKXN7+nrwlFmdeHmEE=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-rekognition@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-rekognition/-/client-rekognition-3.6.1.tgz#710ba6d4509a2caa417cf0702ba81b5b65aa73eb"
+  integrity sha1-cQum1FCaLKpBfPBwK6gbW2Wqc+s=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    "@aws-sdk/util-waiter" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-s3@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-s3/-/client-s3-3.6.1.tgz#aab1e0e92b353d9d51152d9347b7e1809f3593d0"
+  integrity sha1-qrHg6Ss1PZ1RFS2TR7fhgJ81k9A=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/eventstream-serde-browser" "3.6.1"
+    "@aws-sdk/eventstream-serde-config-resolver" "3.6.1"
+    "@aws-sdk/eventstream-serde-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-blob-browser" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/hash-stream-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/md5-js" "3.6.1"
+    "@aws-sdk/middleware-apply-body-checksum" "3.6.1"
+    "@aws-sdk/middleware-bucket-endpoint" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-expect-continue" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-location-constraint" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-sdk-s3" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-ssec" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    "@aws-sdk/util-waiter" "3.6.1"
+    "@aws-sdk/xml-builder" "3.6.1"
+    fast-xml-parser "^3.16.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-sso@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-sso/-/client-sso-3.22.0.tgz#992655f348fcbd6d8e9688c97dd03272ae39e592"
+  integrity sha1-mSZV80j8vW2OlojJfdAycq455ZI=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.22.0"
+    "@aws-sdk/fetch-http-handler" "3.22.0"
+    "@aws-sdk/hash-node" "3.22.0"
+    "@aws-sdk/invalid-dependency" "3.22.0"
+    "@aws-sdk/middleware-content-length" "3.22.0"
+    "@aws-sdk/middleware-host-header" "3.22.0"
+    "@aws-sdk/middleware-logger" "3.22.0"
+    "@aws-sdk/middleware-retry" "3.22.0"
+    "@aws-sdk/middleware-serde" "3.22.0"
+    "@aws-sdk/middleware-stack" "3.22.0"
+    "@aws-sdk/middleware-user-agent" "3.22.0"
+    "@aws-sdk/node-config-provider" "3.22.0"
+    "@aws-sdk/node-http-handler" "3.22.0"
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/smithy-client" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/url-parser" "3.22.0"
+    "@aws-sdk/util-base64-browser" "3.22.0"
+    "@aws-sdk/util-base64-node" "3.22.0"
+    "@aws-sdk/util-body-length-browser" "3.22.0"
+    "@aws-sdk/util-body-length-node" "3.22.0"
+    "@aws-sdk/util-user-agent-browser" "3.22.0"
+    "@aws-sdk/util-user-agent-node" "3.22.0"
+    "@aws-sdk/util-utf8-browser" "3.22.0"
+    "@aws-sdk/util-utf8-node" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-sts@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-sts/-/client-sts-3.22.0.tgz#093cbdaf5501220820ef2fa7c1a2cdefcba6a089"
+  integrity sha1-CTy9r1UBIggg7y+nwaLN78umoIk=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.22.0"
+    "@aws-sdk/credential-provider-node" "3.22.0"
+    "@aws-sdk/fetch-http-handler" "3.22.0"
+    "@aws-sdk/hash-node" "3.22.0"
+    "@aws-sdk/invalid-dependency" "3.22.0"
+    "@aws-sdk/middleware-content-length" "3.22.0"
+    "@aws-sdk/middleware-host-header" "3.22.0"
+    "@aws-sdk/middleware-logger" "3.22.0"
+    "@aws-sdk/middleware-retry" "3.22.0"
+    "@aws-sdk/middleware-sdk-sts" "3.22.0"
+    "@aws-sdk/middleware-serde" "3.22.0"
+    "@aws-sdk/middleware-signing" "3.22.0"
+    "@aws-sdk/middleware-stack" "3.22.0"
+    "@aws-sdk/middleware-user-agent" "3.22.0"
+    "@aws-sdk/node-config-provider" "3.22.0"
+    "@aws-sdk/node-http-handler" "3.22.0"
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/smithy-client" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/url-parser" "3.22.0"
+    "@aws-sdk/util-base64-browser" "3.22.0"
+    "@aws-sdk/util-base64-node" "3.22.0"
+    "@aws-sdk/util-body-length-browser" "3.22.0"
+    "@aws-sdk/util-body-length-node" "3.22.0"
+    "@aws-sdk/util-user-agent-browser" "3.22.0"
+    "@aws-sdk/util-user-agent-node" "3.22.0"
+    "@aws-sdk/util-utf8-browser" "3.22.0"
+    "@aws-sdk/util-utf8-node" "3.22.0"
+    entities "2.2.0"
+    fast-xml-parser "3.19.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-textract@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-textract/-/client-textract-3.6.1.tgz#b8972f53f0353222b4c052adc784291e602be6aa"
+  integrity sha1-uJcvU/A1MiK0wFKtx4QpHmAr5qo=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+
+"@aws-sdk/client-translate@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/client-translate/-/client-translate-3.6.1.tgz#ce855c9fe7885b930d4039c2e45c869e3c0a6656"
+  integrity sha1-zoVcn+eIW5MNQDnC5FyGnjwKZlY=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^1.0.0"
+    "@aws-crypto/sha256-js" "^1.0.0"
+    "@aws-sdk/config-resolver" "3.6.1"
+    "@aws-sdk/credential-provider-node" "3.6.1"
+    "@aws-sdk/fetch-http-handler" "3.6.1"
+    "@aws-sdk/hash-node" "3.6.1"
+    "@aws-sdk/invalid-dependency" "3.6.1"
+    "@aws-sdk/middleware-content-length" "3.6.1"
+    "@aws-sdk/middleware-host-header" "3.6.1"
+    "@aws-sdk/middleware-logger" "3.6.1"
+    "@aws-sdk/middleware-retry" "3.6.1"
+    "@aws-sdk/middleware-serde" "3.6.1"
+    "@aws-sdk/middleware-signing" "3.6.1"
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/middleware-user-agent" "3.6.1"
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/node-http-handler" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/url-parser" "3.6.1"
+    "@aws-sdk/url-parser-native" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    "@aws-sdk/util-base64-node" "3.6.1"
+    "@aws-sdk/util-body-length-browser" "3.6.1"
+    "@aws-sdk/util-body-length-node" "3.6.1"
+    "@aws-sdk/util-user-agent-browser" "3.6.1"
+    "@aws-sdk/util-user-agent-node" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    "@aws-sdk/util-utf8-node" "3.6.1"
+    tslib "^2.0.0"
+    uuid "^3.0.0"
+
+"@aws-sdk/config-resolver@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/config-resolver/-/config-resolver-3.22.0.tgz#d43c18e32454b2e2e67deabee875e5e811c9b759"
+  integrity sha1-1DwY4yRUsuLmfeq+6HXl6BHJt1k=
+  dependencies:
+    "@aws-sdk/signature-v4" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/config-resolver@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/config-resolver/-/config-resolver-3.6.1.tgz#3bcc5e6a0ebeedf0981b0540e1f18a72b4dafebf"
+  integrity sha1-O8xeag6+7fCYGwVA4fGKcrTa/r8=
+  dependencies:
+    "@aws-sdk/signature-v4" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/credential-provider-cognito-identity@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-3.6.1.tgz#df928951612a34832c2df15fb899251d828c2df3"
+  integrity sha1-35KJUWEqNIMsLfFfuJklHYKMLfM=
+  dependencies:
+    "@aws-sdk/client-cognito-identity" "3.6.1"
+    "@aws-sdk/property-provider" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/credential-provider-env@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-env/-/credential-provider-env-3.22.0.tgz#1d8fc8d9ba6e31f420dcc961d8c4348f484d5e80"
+  integrity sha1-HY/I2bpuMfQg3Mlh2MQ0j0hNXoA=
+  dependencies:
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/credential-provider-env@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-env/-/credential-provider-env-3.6.1.tgz#d8b2dd36836432a9b8ec05a5cf9fe428b04c9964"
+  integrity sha1-2LLdNoNkMqm47AWlz5/kKLBMmWQ=
+  dependencies:
+    "@aws-sdk/property-provider" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/credential-provider-imds@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-imds/-/credential-provider-imds-3.22.0.tgz#510ac5e44a160996fffe0ed9baa67730e1f6a222"
+  integrity sha1-UQrF5EoWCZb//g7ZuqZ3MOH2oiI=
+  dependencies:
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/credential-provider-imds@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-imds/-/credential-provider-imds-3.6.1.tgz#b5a8b8ef15eac26c58e469451a6c7c34ab3ca875"
+  integrity sha1-tai47xXqwmxY5GlFGmx8NKs8qHU=
+  dependencies:
+    "@aws-sdk/property-provider" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/credential-provider-ini@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-ini/-/credential-provider-ini-3.22.0.tgz#5448c2ad82b81bb0032b1319815cd3577d9d6f9a"
+  integrity sha1-VEjCrYK4G7ADKxMZgVzTV32db5o=
+  dependencies:
+    "@aws-sdk/credential-provider-env" "3.22.0"
+    "@aws-sdk/credential-provider-imds" "3.22.0"
+    "@aws-sdk/credential-provider-sso" "3.22.0"
+    "@aws-sdk/credential-provider-web-identity" "3.22.0"
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/shared-ini-file-loader" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/util-credentials" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/credential-provider-ini@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-ini/-/credential-provider-ini-3.6.1.tgz#0da6d9341e621f8e0815814ed017b88e268fbc3d"
+  integrity sha1-DabZNB5iH44IFYFO0Be4jiaPvD0=
+  dependencies:
+    "@aws-sdk/property-provider" "3.6.1"
+    "@aws-sdk/shared-ini-file-loader" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/credential-provider-node@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-node/-/credential-provider-node-3.22.0.tgz#7bcc9a7de7ab0ee9ea176fa46d5af29a26d2bbd2"
+  integrity sha1-e8yafeerDunqF2+kbVrymibSu9I=
+  dependencies:
+    "@aws-sdk/credential-provider-env" "3.22.0"
+    "@aws-sdk/credential-provider-imds" "3.22.0"
+    "@aws-sdk/credential-provider-ini" "3.22.0"
+    "@aws-sdk/credential-provider-process" "3.22.0"
+    "@aws-sdk/credential-provider-sso" "3.22.0"
+    "@aws-sdk/credential-provider-web-identity" "3.22.0"
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/shared-ini-file-loader" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/credential-provider-node@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-node/-/credential-provider-node-3.6.1.tgz#0055292a4f0f49d053e8dfcc9174d8d2cf6862bb"
+  integrity sha1-AFUpKk8PSdBT6N/MkXTY0s9oYrs=
+  dependencies:
+    "@aws-sdk/credential-provider-env" "3.6.1"
+    "@aws-sdk/credential-provider-imds" "3.6.1"
+    "@aws-sdk/credential-provider-ini" "3.6.1"
+    "@aws-sdk/credential-provider-process" "3.6.1"
+    "@aws-sdk/property-provider" "3.6.1"
+    "@aws-sdk/shared-ini-file-loader" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/credential-provider-process@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-process/-/credential-provider-process-3.22.0.tgz#e86ece815033a57a48c7ca7a01d68f57db2122a4"
+  integrity sha1-6G7OgVAzpXpIx8p6AdaPV9shIqQ=
+  dependencies:
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/shared-ini-file-loader" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/util-credentials" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/credential-provider-process@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-process/-/credential-provider-process-3.6.1.tgz#5bf851f3ee232c565b8c82608926df0ad28c1958"
+  integrity sha1-W/hR8+4jLFZbjIJgiSbfCtKMGVg=
+  dependencies:
+    "@aws-sdk/credential-provider-ini" "3.6.1"
+    "@aws-sdk/property-provider" "3.6.1"
+    "@aws-sdk/shared-ini-file-loader" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/credential-provider-sso@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-sso/-/credential-provider-sso-3.22.0.tgz#dedd2ee4b8b24c708990fb5c55226fa42562cdc5"
+  integrity sha1-3t0u5LiyTHCJkPtcVSJvpCVizcU=
+  dependencies:
+    "@aws-sdk/client-sso" "3.22.0"
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/shared-ini-file-loader" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/util-credentials" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/credential-provider-web-identity@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/credential-provider-web-identity/-/credential-provider-web-identity-3.22.0.tgz#bce6db7729fad6d6ce9bc0f4a7d8664f8a2f87ee"
+  integrity sha1-vObbdyn61tbOm8D0p9hmT4ovh+4=
+  dependencies:
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/eventstream-marshaller@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/eventstream-marshaller/-/eventstream-marshaller-3.6.1.tgz#6abfbdf3639249d1a77686cbcae5d8e47bcba989"
+  integrity sha1-ar+982OSSdGndobLyuXY5HvLqYk=
+  dependencies:
+    "@aws-crypto/crc32" "^1.0.0"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-hex-encoding" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/eventstream-serde-browser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/eventstream-serde-browser/-/eventstream-serde-browser-3.6.1.tgz#1253bd5215745f79d534fc9bc6bd006ee7a0f239"
+  integrity sha1-ElO9UhV0X3nVNPybxr0Abueg8jk=
+  dependencies:
+    "@aws-sdk/eventstream-marshaller" "3.6.1"
+    "@aws-sdk/eventstream-serde-universal" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/eventstream-serde-config-resolver@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/eventstream-serde-config-resolver/-/eventstream-serde-config-resolver-3.6.1.tgz#ebb5c1614f55d0ebb225defac1f76c420e188086"
+  integrity sha1-67XBYU9V0OuyJd76wfdsQg4YgIY=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/eventstream-serde-node@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/eventstream-serde-node/-/eventstream-serde-node-3.6.1.tgz#705e12bea185905a198d7812af10e3a679dfc841"
+  integrity sha1-cF4SvqGFkFoZjXgSrxDjpnnfyEE=
+  dependencies:
+    "@aws-sdk/eventstream-marshaller" "3.6.1"
+    "@aws-sdk/eventstream-serde-universal" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/eventstream-serde-universal@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/eventstream-serde-universal/-/eventstream-serde-universal-3.6.1.tgz#5be6865adb55436cbc90557df3a3c49b53553470"
+  integrity sha1-W+aGWttVQ2y8kFV986PEm1NVNHA=
+  dependencies:
+    "@aws-sdk/eventstream-marshaller" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/fetch-http-handler@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/fetch-http-handler/-/fetch-http-handler-3.22.0.tgz#d98b3cc756cc7a16865fed72e83ee5555f9be2cb"
+  integrity sha1-2Ys8x1bMehaGX+1y6D7lVV+b4ss=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/querystring-builder" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/util-base64-browser" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/fetch-http-handler@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/fetch-http-handler/-/fetch-http-handler-3.6.1.tgz#c5fb4a4ee158161fca52b220d2c11dddcda9b092"
+  integrity sha1-xftKTuFYFh/KUrIg0sEd3c2psJI=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/querystring-builder" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-base64-browser" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/hash-blob-browser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/hash-blob-browser/-/hash-blob-browser-3.6.1.tgz#f44a1857b75769e21cd6091211171135e03531e6"
+  integrity sha1-9EoYV7dXaeIc1gkSERcRNeA1MeY=
+  dependencies:
+    "@aws-sdk/chunked-blob-reader" "3.6.1"
+    "@aws-sdk/chunked-blob-reader-native" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/hash-node@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/hash-node/-/hash-node-3.22.0.tgz#976cf1683b3ad464a98ddc32523afc0e929034c9"
+  integrity sha1-l2zxaDs61GSpjdwyUjr8DpKQNMk=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/util-buffer-from" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/hash-node@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/hash-node/-/hash-node-3.6.1.tgz#72d75ec3b9c7e7f9b0c498805364f1f897165ce9"
+  integrity sha1-ctdew7nH5/mwxJiAU2Tx+JcWXOk=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-buffer-from" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/hash-stream-node@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/hash-stream-node/-/hash-stream-node-3.6.1.tgz#91c77e382ef3d0472160a49b1109395a4a70c801"
+  integrity sha1-kcd+OC7z0EchYKSbEQk5WkpwyAE=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/invalid-dependency@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/invalid-dependency/-/invalid-dependency-3.22.0.tgz#31aaab2b81a3e632e2d763daf1170b4dbca618a0"
+  integrity sha1-MaqrK4Gj5jLi12Pa8RcLTbymGKA=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/invalid-dependency@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/invalid-dependency/-/invalid-dependency-3.6.1.tgz#fd2519f5482c6d6113d38a73b7143fd8d5b5b670"
+  integrity sha1-/SUZ9UgsbWET04pztxQ/2NW1tnA=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/is-array-buffer@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/is-array-buffer/-/is-array-buffer-3.22.0.tgz#d380c241007ed7caf1017cd30f81ab27bcce8c13"
+  integrity sha1-04DCQQB+18rxAXzTD4GrJ7zOjBM=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/is-array-buffer@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/is-array-buffer/-/is-array-buffer-3.6.1.tgz#96df5d64b2d599947f81b164d5d92623f85c659c"
+  integrity sha1-lt9dZLLVmZR/gbFk1dkmI/hcZZw=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/md5-js@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/md5-js/-/md5-js-3.6.1.tgz#bffe21106fba0174d73ccc2c29ca1c5364d2af2d"
+  integrity sha1-v/4hEG+6AXTXPMwsKcocU2TSry0=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-utf8-browser" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-apply-body-checksum@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-apply-body-checksum/-/middleware-apply-body-checksum-3.6.1.tgz#dece86e489531981b8aa2786dafbbef69edce1d6"
+  integrity sha1-3s6G5IlTGYG4qieG2vu+9p7c4dY=
+  dependencies:
+    "@aws-sdk/is-array-buffer" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-bucket-endpoint@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-bucket-endpoint/-/middleware-bucket-endpoint-3.6.1.tgz#7ebdd79fac0f78d8af549f4fd799d4f7d02e78de"
+  integrity sha1-fr3Xn6wPeNivVJ9P15nU99AueN4=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-arn-parser" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-content-length@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-content-length/-/middleware-content-length-3.22.0.tgz#ff0d9b5af6fc2803aa81c81342174409643e5729"
+  integrity sha1-/w2bWvb8KAOqgcgTQhdECWQ+Vyk=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/middleware-content-length@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-content-length/-/middleware-content-length-3.6.1.tgz#f9c00a4045b2b56c1ff8bcbb3dec9c3d42332992"
+  integrity sha1-+cAKQEWytWwf+Ly7PeycPUIzKZI=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-expect-continue@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-expect-continue/-/middleware-expect-continue-3.6.1.tgz#56e56db572f81dd4fa8803e85bd1f36005f9fffa"
+  integrity sha1-VuVttXL4HdT6iAPoW9HzYAX5//o=
+  dependencies:
+    "@aws-sdk/middleware-header-default" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-header-default@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-header-default/-/middleware-header-default-3.6.1.tgz#a3a108d22cbdd1e1754910625fafb2f2a67fbcfc"
+  integrity sha1-o6EI0iy90eF1SRBiX6+y8qZ/vPw=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-host-header@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-host-header/-/middleware-host-header-3.22.0.tgz#e8031a6cc2b957bad5153ecff6f404134a245784"
+  integrity sha1-6AMabMK5V7rVFT7P9vQEE0okV4Q=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/middleware-host-header@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-host-header/-/middleware-host-header-3.6.1.tgz#6e1b4b95c5bfea5a4416fa32f11d8fa2e6edaeff"
+  integrity sha1-bhtLlcW/6lpEFvoy8R2Poubtrv8=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-location-constraint@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-location-constraint/-/middleware-location-constraint-3.6.1.tgz#6fc2dd6a42968f011eb060ca564e9f749649eb01"
+  integrity sha1-b8LdakKWjwEesGDKVk6fdJZJ6wE=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-logger@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-logger/-/middleware-logger-3.22.0.tgz#cadf2aa0b8622fb63ad5a6db472d6d4974ca7ccf"
+  integrity sha1-yt8qoLhiL7Y61abbRy1tSXTKfM8=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/middleware-logger@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-logger/-/middleware-logger-3.6.1.tgz#78b3732cf188d5e4df13488db6418f7f98a77d6d"
+  integrity sha1-eLNzLPGI1eTfE0iNtkGPf5infW0=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-retry@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-retry/-/middleware-retry-3.22.0.tgz#be0b3d37bc16c46935f8c6173985f00d89b22b20"
+  integrity sha1-vgs9N7wWxGk1+MYXOYXwDYmyKyA=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/service-error-classification" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+    uuid "^8.3.2"
+
+"@aws-sdk/middleware-retry@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-retry/-/middleware-retry-3.6.1.tgz#202aadb1a3bf0e1ceabcd8319a5fa308b32db247"
+  integrity sha1-ICqtsaO/DhzqvNgxml+jCLMtskc=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/service-error-classification" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    react-native-get-random-values "^1.4.0"
+    tslib "^1.8.0"
+    uuid "^3.0.0"
+
+"@aws-sdk/middleware-sdk-s3@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-sdk-s3/-/middleware-sdk-s3-3.6.1.tgz#371f8991ac82432982153c035ab9450d8df14546"
+  integrity sha1-Nx+JkayCQymCFTwDWrlFDY3xRUY=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-arn-parser" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-sdk-sts@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-sdk-sts/-/middleware-sdk-sts-3.22.0.tgz#63eca8c8b64bded3030494cf0348e6fc9723f144"
+  integrity sha1-Y+yoyLZL3tMDBJTPA0jm/Jcj8UQ=
+  dependencies:
+    "@aws-sdk/middleware-signing" "3.22.0"
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/signature-v4" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/middleware-serde@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-serde/-/middleware-serde-3.22.0.tgz#d3a669cef36c15ed606884b59345b2dc527f66df"
+  integrity sha1-06ZpzvNsFe1gaIS1k0Wy3FJ/Zt8=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/middleware-serde@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-serde/-/middleware-serde-3.6.1.tgz#734c7d16c2aa9ccc01f6cca5e2f6aa2993b6739d"
+  integrity sha1-c0x9FsKqnMwB9syl4vaqKZO2c50=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-signing@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-signing/-/middleware-signing-3.22.0.tgz#c5190e00791fef8c7a23822ec44a9b62f64877d9"
+  integrity sha1-xRkOAHkf74x6I4IuxEqbYvZId9k=
+  dependencies:
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/signature-v4" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/middleware-signing@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-signing/-/middleware-signing-3.6.1.tgz#e70a2f35d85d70e33c9fddfb54b9520f6382db16"
+  integrity sha1-5wovNdhdcOM8n937VLlSD2OC2xY=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/signature-v4" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-ssec@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-ssec/-/middleware-ssec-3.6.1.tgz#c7dd80e4c1e06be9050c742af7879619b400f0d1"
+  integrity sha1-x92A5MHga+kFDHQq94eWGbQA8NE=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-stack@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-stack/-/middleware-stack-3.22.0.tgz#9907b192e98b171e845258fac76a12111a774937"
+  integrity sha1-mQexkumLFx6EUlj6x2oSERp3STc=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/middleware-stack@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-stack/-/middleware-stack-3.6.1.tgz#d7483201706bb5935a62884e9b60f425f1c6434f"
+  integrity sha1-10gyAXBrtZNaYohOm2D0JfHGQ08=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-user-agent@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-user-agent/-/middleware-user-agent-3.22.0.tgz#fbaf66bee77fb9769bf4db0678a56852cdd4fb69"
+  integrity sha1-+69mvud/uXab9NsGeKVoUs3U+2k=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/middleware-user-agent@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/middleware-user-agent/-/middleware-user-agent-3.6.1.tgz#6845dfb3bc6187897f348c2c87dec833e6a65c99"
+  integrity sha1-aEXfs7xhh4l/NIwsh97IM+amXJk=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/node-config-provider@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/node-config-provider/-/node-config-provider-3.22.0.tgz#f053bb0ab2f8f8bf7515705c5d87c3b9ed1afb70"
+  integrity sha1-8FO7CrL4+L91FXBcXYfDue0a+3A=
+  dependencies:
+    "@aws-sdk/property-provider" "3.22.0"
+    "@aws-sdk/shared-ini-file-loader" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/node-config-provider@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/node-config-provider/-/node-config-provider-3.6.1.tgz#cb85d06329347fde566f08426f8714b1f65d2fb7"
+  integrity sha1-y4XQYyk0f95WbwhCb4cUsfZdL7c=
+  dependencies:
+    "@aws-sdk/property-provider" "3.6.1"
+    "@aws-sdk/shared-ini-file-loader" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/node-http-handler@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/node-http-handler/-/node-http-handler-3.22.0.tgz#f54240a5f3b3d29101480c5c6b1fa9bd85084838"
+  integrity sha1-9UJApfOz0pEBSAxcax+pvYUISDg=
+  dependencies:
+    "@aws-sdk/abort-controller" "3.22.0"
+    "@aws-sdk/protocol-http" "3.22.0"
+    "@aws-sdk/querystring-builder" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/node-http-handler@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/node-http-handler/-/node-http-handler-3.6.1.tgz#4b65c4dcc0cf46ba44cb6c3bf29c5f817bb8d9a7"
+  integrity sha1-S2XE3MDPRrpEy2w78pxfgXu42ac=
+  dependencies:
+    "@aws-sdk/abort-controller" "3.6.1"
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/querystring-builder" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/property-provider@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/property-provider/-/property-provider-3.22.0.tgz#60191795ba0b38827e02b777b9b42a0f1447bfa8"
+  integrity sha1-YBkXlboLOIJ+Ard3ubQqDxRHv6g=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/property-provider@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/property-provider/-/property-provider-3.6.1.tgz#d973fc87d199d32c44d947e17f2ee2dd140a9593"
+  integrity sha1-2XP8h9GZ0yxE2Ufhfy7i3RQKlZM=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/protocol-http@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/protocol-http/-/protocol-http-3.22.0.tgz#01ea7fe5e094f4af04c7c831374e63df228b389b"
+  integrity sha1-Aep/5eCU9K8Ex8gxN05j3yKLOJs=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/protocol-http@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/protocol-http/-/protocol-http-3.6.1.tgz#d3d276846bec19ddb339d06bbc48116d17bbc656"
+  integrity sha1-09J2hGvsGd2zOdBrvEgRbRe7xlY=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/querystring-builder@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/querystring-builder/-/querystring-builder-3.22.0.tgz#4e6240620ffc544ab93408d7184434f900f84301"
+  integrity sha1-TmJAYg/8VEq5NAjXGEQ0+QD4QwE=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/util-uri-escape" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/querystring-builder@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/querystring-builder/-/querystring-builder-3.6.1.tgz#4c769829a3760ef065d0d3801f297a7f0cd324d4"
+  integrity sha1-THaYKaN2DvBl0NOAHyl6fwzTJNQ=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-uri-escape" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/querystring-parser@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/querystring-parser/-/querystring-parser-3.22.0.tgz#d61fe318678b35fcdd3fd1838511bbd41e298d8b"
+  integrity sha1-1h/jGGeLNfzdP9GDhRG71B4pjYs=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/querystring-parser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/querystring-parser/-/querystring-parser-3.6.1.tgz#e3fa5a710429c7dd411e802a0b82beb48012cce2"
+  integrity sha1-4/pacQQpx91BHoAqC4K+tIASzOI=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/s3-request-presigner@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/s3-request-presigner/-/s3-request-presigner-3.6.1.tgz#ec83c70171692862a7f7ebbd151242a5af443695"
+  integrity sha1-7IPHAXFpKGKn9+u9FRJCpa9ENpU=
+  dependencies:
+    "@aws-sdk/protocol-http" "3.6.1"
+    "@aws-sdk/signature-v4" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-create-request" "3.6.1"
+    "@aws-sdk/util-format-url" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/service-error-classification@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/service-error-classification/-/service-error-classification-3.22.0.tgz#dce2271f7415d0be31d4b6021589870b9b914d40"
+  integrity sha1-3OInH3QV0L4x1LYCFYmHC5uRTUA=
+
+"@aws-sdk/service-error-classification@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/service-error-classification/-/service-error-classification-3.6.1.tgz#296fe62ac61338341e8a009c9a2dab013a791903"
+  integrity sha1-KW/mKsYTODQeigCcmi2rATp5GQM=
+
+"@aws-sdk/shared-ini-file-loader@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/shared-ini-file-loader/-/shared-ini-file-loader-3.22.0.tgz#68fa5249429c5ffaeaaf7f81871a9815e2e2a1a2"
+  integrity sha1-aPpSSUKcX/rqr3+BhxqYFeLioaI=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/shared-ini-file-loader@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/shared-ini-file-loader/-/shared-ini-file-loader-3.6.1.tgz#2b7182cbb0d632ad7c9712bebffdeee24a6f7eb6"
+  integrity sha1-K3GCy7DWMq18lxK+v/3u4kpvfrY=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/signature-v4@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/signature-v4/-/signature-v4-3.22.0.tgz#7a0605266f2bf572970d1331d51768d0631a2599"
+  integrity sha1-egYFJm8r9XKXDRMx1Rdo0GMaJZk=
+  dependencies:
+    "@aws-sdk/is-array-buffer" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    "@aws-sdk/util-hex-encoding" "3.22.0"
+    "@aws-sdk/util-uri-escape" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/signature-v4@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/signature-v4/-/signature-v4-3.6.1.tgz#b20a3cf3e891131f83b012651f7d4af2bf240611"
+  integrity sha1-sgo88+iREx+DsBJlH31K8r8kBhE=
+  dependencies:
+    "@aws-sdk/is-array-buffer" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    "@aws-sdk/util-hex-encoding" "3.6.1"
+    "@aws-sdk/util-uri-escape" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/smithy-client@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/smithy-client/-/smithy-client-3.22.0.tgz#af6f73ebb06851c3b0cdd12b01d602d3b28e2865"
+  integrity sha1-r29z67BoUcOwzdErAdYC07KOKGU=
+  dependencies:
+    "@aws-sdk/middleware-stack" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/smithy-client@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/smithy-client/-/smithy-client-3.6.1.tgz#683fef89802e318922f8529a5433592d71a7ce9d"
+  integrity sha1-aD/viYAuMYki+FKaVDNZLXGnzp0=
+  dependencies:
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/types@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/types/-/types-3.22.0.tgz#323afc96eb27a69a97da0803254a62969d3d3539"
+  integrity sha1-Mjr8lusnppqX2ggDJUpilp09NTk=
+
+"@aws-sdk/types@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/types/-/types-3.6.1.tgz#00686db69e998b521fcd4a5f81ef0960980f80c4"
+  integrity sha1-AGhttp6Zi1IfzUpfge8JYJgPgMQ=
+
+"@aws-sdk/types@^1.0.0-alpha.0":
+  version "1.0.0-rc.10"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/types/-/types-1.0.0-rc.10.tgz#729127fbfac5da1a3368ffe6ec2e90acc9ad69c3"
+  integrity sha1-cpEn+/rF2hozaP/m7C6QrMmtacM=
+
+"@aws-sdk/types@^3.1.0":
+  version "3.34.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/types/-/types-3.34.0.tgz#832a802838d0f0ae568db8e3ce1ee550f05bb4b4"
+  integrity sha1-gyqAKDjQ8K5Wjbjjzh7lUPBbtLQ=
+
+"@aws-sdk/url-parser-native@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/url-parser-native/-/url-parser-native-3.6.1.tgz#a5e787f98aafa777e73007f9490df334ef3389a2"
+  integrity sha1-peeH+Yqvp3fnMAf5SQ3zNO8ziaI=
+  dependencies:
+    "@aws-sdk/querystring-parser" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+    url "^0.11.0"
+
+"@aws-sdk/url-parser@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/url-parser/-/url-parser-3.22.0.tgz#fd44f03379fc29c7c6756c651cf80434ef365a7c"
+  integrity sha1-/UTwM3n8KcfGdWxlHPgENO82Wnw=
+  dependencies:
+    "@aws-sdk/querystring-parser" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/url-parser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/url-parser/-/url-parser-3.6.1.tgz#f5d89fb21680469a61cb9fe08a7da3ef887884dd"
+  integrity sha1-9difshaARpphy5/gin2j74h4hN0=
+  dependencies:
+    "@aws-sdk/querystring-parser" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-arn-parser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-arn-parser/-/util-arn-parser-3.6.1.tgz#aa60b1bfa752ad3fa331f22fea4f703b741d1d6d"
+  integrity sha1-qmCxv6dSrT+jMfIv6k9wO3QdHW0=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-base64-browser@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-base64-browser/-/util-base64-browser-3.22.0.tgz#a9e76b3f8adea0ae760daa2651e8287ac3620fcf"
+  integrity sha1-qedrP4reoK52DaomUegoesNiD88=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/util-base64-browser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-base64-browser/-/util-base64-browser-3.6.1.tgz#eddea1311b41037fc3fddd889d3e0a9882363215"
+  integrity sha1-7d6hMRtBA3/D/d2InT4KmII2MhU=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-base64-node@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-base64-node/-/util-base64-node-3.22.0.tgz#b5387b0206013841dbf7d19d77858af7e6963d8a"
+  integrity sha1-tTh7AgYBOEHb99Gdd4WK9+aWPYo=
+  dependencies:
+    "@aws-sdk/util-buffer-from" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/util-base64-node@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-base64-node/-/util-base64-node-3.6.1.tgz#a79c233861e50d3a30728c72b736afdee07d4009"
+  integrity sha1-p5wjOGHlDTowcoxytzav3uB9QAk=
+  dependencies:
+    "@aws-sdk/util-buffer-from" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-body-length-browser@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-body-length-browser/-/util-body-length-browser-3.22.0.tgz#c02188902070558489784f3b76114b91a93e6daa"
+  integrity sha1-wCGIkCBwVYSJeE87dhFLkak+bao=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/util-body-length-browser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-body-length-browser/-/util-body-length-browser-3.6.1.tgz#2e8088f2d9a5a8258b4f56079a8890f538c2797e"
+  integrity sha1-LoCI8tmlqCWLT1YHmoiQ9TjCeX4=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-body-length-node@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-body-length-node/-/util-body-length-node-3.22.0.tgz#2f6292f7c243dd0763af2cde709b5563f6c42e99"
+  integrity sha1-L2KS98JD3QdjryzecJtVY/bELpk=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/util-body-length-node@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-body-length-node/-/util-body-length-node-3.6.1.tgz#6e4f2eae46c5a7b0417a12ca7f4b54c390d4cacd"
+  integrity sha1-bk8urkbFp7BBehLKf0tUw5DUys0=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-buffer-from@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-buffer-from/-/util-buffer-from-3.22.0.tgz#2cd78c7094dfbcf4cbbbfaf5870e5f11462b8ebc"
+  integrity sha1-LNeMcJTfvPTLu/r1hw5fEUYrjrw=
+  dependencies:
+    "@aws-sdk/is-array-buffer" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/util-buffer-from@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-buffer-from/-/util-buffer-from-3.6.1.tgz#24184ce74512f764d84002201b7f5101565e26f9"
+  integrity sha1-JBhM50US92TYQAIgG39RAVZeJvk=
+  dependencies:
+    "@aws-sdk/is-array-buffer" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-create-request@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-create-request/-/util-create-request-3.6.1.tgz#ecc4364551c7b3d0d9834ca3f56528fb8b083838"
+  integrity sha1-7MQ2RVHHs9DZg0yj9WUo+4sIODg=
+  dependencies:
+    "@aws-sdk/middleware-stack" "3.6.1"
+    "@aws-sdk/smithy-client" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-credentials@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-credentials/-/util-credentials-3.22.0.tgz#b9d304252bec2e638ac0057327516d81429e328c"
+  integrity sha1-udMEJSvsLmOKwAVzJ1FtgUKeMow=
+  dependencies:
+    "@aws-sdk/shared-ini-file-loader" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/util-format-url@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-format-url/-/util-format-url-3.6.1.tgz#a011444aed0c47698d65095bcce95d7b4716324b"
+  integrity sha1-oBFESu0MR2mNZQlbzOlde0cWMks=
+  dependencies:
+    "@aws-sdk/querystring-builder" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-hex-encoding@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-hex-encoding/-/util-hex-encoding-3.22.0.tgz#4a888ff64db49fc02ce38e549fbd9c578d7c9ea8"
+  integrity sha1-SoiP9k20n8As445Un72cV418nqg=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/util-hex-encoding@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-hex-encoding/-/util-hex-encoding-3.6.1.tgz#84954fcc47b74ffbd2911ba5113e93bd9b1c6510"
+  integrity sha1-hJVPzEe3T/vSkRulET6TvZscZRA=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-locate-window@^3.0.0":
+  version "3.34.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-locate-window/-/util-locate-window-3.34.0.tgz#612cc17701cd712069fe7eea8b806731dfccd954"
+  integrity sha1-YSzBdwHNcSBp/n7qi4BnMd/M2VQ=
+  dependencies:
+    tslib "^2.3.0"
+
+"@aws-sdk/util-uri-escape@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-uri-escape/-/util-uri-escape-3.22.0.tgz#e2554a3ec942fc0463958ec21101804e9f04d599"
+  integrity sha1-4lVKPslC/ARjlY7CEQGATp8E1Zk=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/util-uri-escape@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-uri-escape/-/util-uri-escape-3.6.1.tgz#433e87458bb510d0e457a86c0acf12b046a5068c"
+  integrity sha1-Qz6HRYu1ENDkV6hsCs8SsEalBow=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-user-agent-browser@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-user-agent-browser/-/util-user-agent-browser-3.22.0.tgz#bf9c178b928831d56eaad7b6ab4ea1eb57abb2ef"
+  integrity sha1-v5wXi5KIMdVuqte2q06h61ersu8=
+  dependencies:
+    "@aws-sdk/types" "3.22.0"
+    bowser "^2.11.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/util-user-agent-browser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-user-agent-browser/-/util-user-agent-browser-3.6.1.tgz#11b9cc8743392761adb304460f4b54ec8acc2ee6"
+  integrity sha1-EbnMh0M5J2GtswRGD0tU7IrMLuY=
+  dependencies:
+    "@aws-sdk/types" "3.6.1"
+    bowser "^2.11.0"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-user-agent-node@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-user-agent-node/-/util-user-agent-node-3.22.0.tgz#3e66ead905d3da85fedaad9653696652d6896dbc"
+  integrity sha1-Pmbq2QXT2oX+2q2WU2lmUtaJbbw=
+  dependencies:
+    "@aws-sdk/node-config-provider" "3.22.0"
+    "@aws-sdk/types" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/util-user-agent-node@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-user-agent-node/-/util-user-agent-node-3.6.1.tgz#98384095fa67d098ae7dd26f3ccaad028e8aebb6"
+  integrity sha1-mDhAlfpn0JiufdJvPMqtAo6K67Y=
+  dependencies:
+    "@aws-sdk/node-config-provider" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-utf8-browser@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-utf8-browser/-/util-utf8-browser-3.22.0.tgz#c16ad5e2218e5dcf91539e986010180ce70098fd"
+  integrity sha1-wWrV4iGOXc+RU56YYBAYDOcAmP0=
+  dependencies:
+    tslib "^2.0.0"
+
+"@aws-sdk/util-utf8-browser@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-utf8-browser/-/util-utf8-browser-3.6.1.tgz#97a8770cae9d29218adc0f32c7798350261377c7"
+  integrity sha1-l6h3DK6dKSGK3A8yx3mDUCYTd8c=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-utf8-browser@^1.0.0-alpha.0":
+  version "1.0.0-rc.8"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-utf8-browser/-/util-utf8-browser-1.0.0-rc.8.tgz#bf1f1cfed8c024f43a7c43b643fdf2b4523b5973"
+  integrity sha1-vx8c/tjAJPQ6fEO2Q/3ytFI7WXM=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-utf8-browser@^3.0.0":
+  version "3.34.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-utf8-browser/-/util-utf8-browser-3.34.0.tgz#6fd3b06cbed53a83f1f438f5ef8f29aa045f5666"
+  integrity sha1-b9OwbL7VOoPx9Dj1748pqgRfVmY=
+  dependencies:
+    tslib "^2.3.0"
+
+"@aws-sdk/util-utf8-node@3.22.0":
+  version "3.22.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-utf8-node/-/util-utf8-node-3.22.0.tgz#22066f003950f20697fa8071c3618e4949e76154"
+  integrity sha1-IgZvADlQ8gaX+oBxw2GOSUnnYVQ=
+  dependencies:
+    "@aws-sdk/util-buffer-from" "3.22.0"
+    tslib "^2.0.0"
+
+"@aws-sdk/util-utf8-node@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-utf8-node/-/util-utf8-node-3.6.1.tgz#18534c2069b61f5739ee4cdc70060c9f4b4c4c4f"
+  integrity sha1-GFNMIGm2H1c57kzccAYMn0tMTE8=
+  dependencies:
+    "@aws-sdk/util-buffer-from" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-waiter@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/util-waiter/-/util-waiter-3.6.1.tgz#5c66c2da33ff98468726fefddc2ca7ac3352c17d"
+  integrity sha1-XGbC2jP/mEaHJv793CynrDNSwX0=
+  dependencies:
+    "@aws-sdk/abort-controller" "3.6.1"
+    "@aws-sdk/types" "3.6.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/xml-builder@3.6.1":
+  version "3.6.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@aws-sdk/xml-builder/-/xml-builder-3.6.1.tgz#d85d7db5e8e30ba74de93ddf0cf6197e6e4b15ea"
+  integrity sha1-2F19tejjC6dN6T3fDPYZfm5LFeo=
+  dependencies:
+    tslib "^1.8.0"
+
 "@babel/code-frame@7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -1476,6 +3362,13 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
+"@sinonjs/commons@^1", "@sinonjs/commons@^1.3.0", "@sinonjs/commons@^1.4.0":
+  version "1.8.3"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@sinonjs/commons/-/commons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
+  integrity sha1-OALd0hpQqUm2ch3dcto25n5/Gy0=
+  dependencies:
+    type-detect "4.0.8"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.2.tgz#858f5c4b48d80778fde4b9d541f27edc0d56488b"
@@ -1489,6 +3382,28 @@
   integrity sha512-MZPUxrmFubI36XS1DI3qmI0YdN1gks62JtFZvxR67ljjSNCeK6U08Zx4msEWOXuofgqUt6zPHSi1H9fbjR/NRA==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@sinonjs/formatio@^3.2.1":
+  version "3.2.2"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@sinonjs/formatio/-/formatio-3.2.2.tgz#771c60dfa75ea7f2d68e3b94c7e888a78781372c"
+  integrity sha1-dxxg36dep/LWjjuUx+iIp4eBNyw=
+  dependencies:
+    "@sinonjs/commons" "^1"
+    "@sinonjs/samsam" "^3.1.0"
+
+"@sinonjs/samsam@^3.1.0", "@sinonjs/samsam@^3.3.3":
+  version "3.3.3"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@sinonjs/samsam/-/samsam-3.3.3.tgz#46682efd9967b259b81136b9f120fd54585feb4a"
+  integrity sha1-Rmgu/Zlnslm4ETa58SD9VFhf60o=
+  dependencies:
+    "@sinonjs/commons" "^1.3.0"
+    array-from "^2.1.1"
+    lodash "^4.17.15"
+
+"@sinonjs/text-encoding@^0.7.1":
+  version "0.7.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@sinonjs/text-encoding/-/text-encoding-0.7.1.tgz#8da5c6530915653f3a1f38fd5f101d8c3f8079c5"
+  integrity sha1-jaXGUwkVZT86Hzj9XxAdjD+AecU=
 
 "@surma/rollup-plugin-off-main-thread@^1.1.1":
   version "1.4.2"
@@ -1687,6 +3602,11 @@
   integrity sha512-kSjgDMZONiIfSH1Nxcr5JIRMwUetDki63FSQfpTCz8ogF3Ulqm8+mr5f78dUYs6vMiB6gBusQqfQmBvHZj/lwg==
   dependencies:
     "@babel/types" "^7.3.0"
+
+"@types/cookie@^0.3.3":
+  version "0.3.3"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/@types/cookie/-/cookie-0.3.3.tgz#85bc74ba782fb7aa3a514d11767832b0e3bc6803"
+  integrity sha1-hbx0ungvt6o6UU0RdngysOO8aAM=
 
 "@types/eslint@^7.2.6":
   version "7.2.6"
@@ -2228,6 +4148,17 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+amazon-cognito-identity-js@5.1.2:
+  version "5.1.2"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/amazon-cognito-identity-js/-/amazon-cognito-identity-js-5.1.2.tgz#fc135e76e9a9bebc25211c4c98de0eefc2758951"
+  integrity sha1-/BNedumpvrwlIRxMmN4O78J1iVE=
+  dependencies:
+    buffer "4.9.2"
+    crypto-js "^4.1.1"
+    fast-base64-decode "^1.0.0"
+    isomorphic-unfetch "^3.0.0"
+    js-cookie "^2.2.1"
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -2354,6 +4285,11 @@ array-flatten@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-2.1.2.tgz#24ef80a28c1a893617e2149b0c6d0d788293b099"
   integrity sha512-hNfzcOV8W4NdualtqBFPyVO+54DSJuZGY9qT4pRroB6S9e3iiido2ISIC5h9R2sPJ8H3FHCIiEnsv1lPXO3KtQ==
+
+array-from@^2.1.1:
+  version "2.1.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/array-from/-/array-from-2.1.1.tgz#cfe9d8c26628b9dc5aecc62a9f5d8f1f352c1195"
+  integrity sha1-z+nYwmYoudxa7MYqn12PHzUsEZU=
 
 array-includes@^3.1.1, array-includes@^3.1.2:
   version "3.1.3"
@@ -2507,6 +4443,25 @@ autoprefixer@^9.6.1:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
+aws-amplify@^4.3.0:
+  version "4.3.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/aws-amplify/-/aws-amplify-4.3.0.tgz#b33f7a9258bd2c2cc5919d87ba813e875118c04b"
+  integrity sha1-sz96kli9LCzFkZ2HuoE+h1EYwEs=
+  dependencies:
+    "@aws-amplify/analytics" "5.0.18"
+    "@aws-amplify/api" "4.0.18"
+    "@aws-amplify/auth" "4.3.8"
+    "@aws-amplify/cache" "4.0.20"
+    "@aws-amplify/core" "4.3.0"
+    "@aws-amplify/datastore" "3.4.6"
+    "@aws-amplify/geo" "1.1.0"
+    "@aws-amplify/interactions" "4.0.18"
+    "@aws-amplify/predictions" "4.0.18"
+    "@aws-amplify/pubsub" "4.1.10"
+    "@aws-amplify/storage" "4.4.1"
+    "@aws-amplify/ui" "2.0.3"
+    "@aws-amplify/xr" "3.0.18"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -2521,6 +4476,13 @@ axe-core@^4.0.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.1.2.tgz#7cf783331320098bfbef620df3b3c770147bc224"
   integrity sha512-V+Nq70NxKhYt89ArVcaNL9FDryB3vQOd+BFXZIfO3RP6rwtj+2yqqqdHEkacutglPaZLkJeuXKCjCJDMGPtPqg==
+
+axios@0.21.4:
+  version "0.21.4"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=
+  dependencies:
+    follow-redirects "^1.14.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -2696,7 +4658,7 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-base64-js@^1.0.2:
+base64-js@^1.0.2, base64-js@^1.3.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
@@ -2805,6 +4767,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bowser@^2.11.0:
+  version "2.11.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/bowser/-/bowser-2.11.0.tgz#5ca3c35757a7aa5771500c70a73a9f91ef420a8f"
+  integrity sha1-XKPDV1enqldxUAxwpzqfke9CCo8=
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -2936,10 +4903,33 @@ bser@2.1.1:
   dependencies:
     node-int64 "^0.4.0"
 
+buffer-alloc-unsafe@^1.1.0:
+  version "1.1.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/buffer-alloc-unsafe/-/buffer-alloc-unsafe-1.1.0.tgz#bd7dc26ae2972d0eda253be061dba992349c19f0"
+  integrity sha1-vX3CauKXLQ7aJTvgYdupkjScGfA=
+
+buffer-alloc@^1.2.0:
+  version "1.2.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/buffer-alloc/-/buffer-alloc-1.2.0.tgz#890dd90d923a873e08e10e5fd51a57e5b7cce0ec"
+  integrity sha1-iQ3ZDZI6hz4I4Q5f1RpX5bfM4Ow=
+  dependencies:
+    buffer-alloc-unsafe "^1.1.0"
+    buffer-fill "^1.0.0"
+
+buffer-fill@^1.0.0:
+  version "1.0.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/buffer-fill/-/buffer-fill-1.0.0.tgz#f8f78b76789888ef39f205cd637f68e702122b2c"
+  integrity sha1-+PeLdniYiO858gXNY39o5wISKyw=
+
 buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
+
+buffer-from@^1.1.1:
+  version "1.1.2"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
+  integrity sha1-KxRqb9cugLT1XSVfNe1Zo6mkG9U=
 
 buffer-indexof@^1.0.0:
   version "1.1.1"
@@ -2951,7 +4941,7 @@ buffer-xor@^1.0.3:
   resolved "https://registry.yarnpkg.com/buffer-xor/-/buffer-xor-1.0.3.tgz#26e61ed1422fb70dd42e6e36729ed51d855fe8d9"
   integrity sha1-JuYe0UIvtw3ULm42cp7VHYVf6Nk=
 
-buffer@^4.3.0:
+buffer@4.9.2, buffer@^4.3.0:
   version "4.9.2"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-4.9.2.tgz#230ead344002988644841ab0244af8c44bbe3ef8"
   integrity sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==
@@ -2959,6 +4949,14 @@ buffer@^4.3.0:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
     isarray "^1.0.0"
+
+buffer@^5.4.3:
+  version "5.7.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/buffer/-/buffer-5.7.1.tgz#ba62e7c13133053582197160851a8f648e99eed0"
+  integrity sha1-umLnwTEzBTWCGXFghRqPZI6Z7tA=
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.1.13"
 
 builtin-modules@^3.1.0:
   version "3.2.0"
@@ -3078,6 +5076,15 @@ camel-case@^4.1.1:
   dependencies:
     pascal-case "^3.1.2"
     tslib "^2.0.3"
+
+camelcase-keys@6.2.2:
+  version "6.2.2"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/camelcase-keys/-/camelcase-keys-6.2.2.tgz#5e755d6ba51aa223ec7d3d52f25778210f9dc3c0"
+  integrity sha1-XnVda6UaoiPsfT1S8ld4IQ+dw8A=
+  dependencies:
+    camelcase "^5.3.1"
+    map-obj "^4.0.0"
+    quick-lru "^4.0.1"
 
 camelcase@5.3.1, camelcase@^5.0.0, camelcase@^5.3.1:
   version "5.3.1"
@@ -3478,6 +5485,11 @@ cookie@0.4.0:
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
   integrity sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
 
+cookie@^0.4.0:
+  version "0.4.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/cookie/-/cookie-0.4.1.tgz#afd713fe26ebd21ba95ceb61f9a8116e50a537d1"
+  integrity sha1-r9cT/ibr0hupXOth+agRblClN9E=
+
 copy-concurrently@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/copy-concurrently/-/copy-concurrently-1.0.5.tgz#92297398cae34937fcafd6ec8139c18051f0b5e0"
@@ -3622,6 +5634,11 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
     randomfill "^1.0.3"
+
+crypto-js@^4.1.1:
+  version "4.1.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
+  integrity sha1-nkhbzwNSEEG9hYRHhrg/t2GXNs8=
 
 crypto-random-string@^1.0.0:
   version "1.0.0"
@@ -4046,6 +6063,11 @@ diff-sequences@^27.0.6:
   resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/diff-sequences/-/diff-sequences-27.0.6.tgz#3305cb2e55a033924054695cc66019fd7f8e5723"
   integrity sha1-MwXLLlWgM5JAVGlcxmAZ/X+OVyM=
 
+diff@^3.5.0:
+  version "3.5.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
+  integrity sha1-gAwN0eCov7yVg1wgKtIg/jF+WhI=
+
 diffie-hellman@^5.0.0:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/diffie-hellman/-/diffie-hellman-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
@@ -4054,6 +6076,11 @@ diffie-hellman@^5.0.0:
     bn.js "^4.1.0"
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
+
+dijkstrajs@^1.0.1:
+  version "1.0.2"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/dijkstrajs/-/dijkstrajs-1.0.2.tgz#2e48c0d3b825462afe75ab4ad5e829c8ece36257"
+  integrity sha1-LkjA07glRir+datK1egpyOzjYlc=
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -4295,15 +6322,15 @@ enquirer@^2.3.5:
   dependencies:
     ansi-colors "^4.1.1"
 
+entities@2.2.0, entities@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
+  integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
+
 entities@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==
-
-entities@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
-  integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
 errno@^0.1.3, errno@~0.1.7:
   version "0.1.8"
@@ -4688,6 +6715,11 @@ events@^3.0.0:
   resolved "https://registry.yarnpkg.com/events/-/events-3.2.0.tgz#93b87c18f8efcd4202a461aec4dfc0556b639379"
   integrity sha512-/46HWwbfCX2xTawVfkKLGxMifJYQBWMwY1mjywRtb4c9x8l5NP3KoJtnIOiL1hfdRkIuYhETxQlo62IF8tcnlg==
 
+events@^3.1.0:
+  version "3.3.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
+  integrity sha1-Mala0Kkk4tLEGagTrrLE6HjqdAA=
+
 eventsource@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.0.7.tgz#8fbc72c93fcd34088090bc0a4e64f4b5cee6d8d0"
@@ -4853,6 +6885,11 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
+fast-base64-decode@^1.0.0:
+  version "1.0.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/fast-base64-decode/-/fast-base64-decode-1.0.0.tgz#b434a0dd7d92b12b43f26819300d2dafb83ee418"
+  integrity sha1-tDSg3X2SsStD8mgZMA0tr7g+5Bg=
+
 fast-deep-equal@^3.1.1:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
@@ -4879,6 +6916,18 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
+
+fast-xml-parser@3.19.0:
+  version "3.19.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/fast-xml-parser/-/fast-xml-parser-3.19.0.tgz#cb637ec3f3999f51406dd8ff0e6fc4d83e520d01"
+  integrity sha1-y2N+w/OZn1FAbdj/Dm/E2D5SDQE=
+
+fast-xml-parser@^3.16.0:
+  version "3.20.3"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/fast-xml-parser/-/fast-xml-parser-3.20.3.tgz#c171425356d4d929efeca4e4f67f24231a31c786"
+  integrity sha1-wXFCU1bU2Snv7KTk9n8kIxoxx4Y=
+  dependencies:
+    strnum "^1.0.4"
 
 fastq@^1.6.0:
   version "1.10.1"
@@ -5031,6 +7080,11 @@ follow-redirects@^1.0.0:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.2.tgz#dd73c8effc12728ba5cf4259d760ea5fb83e3147"
   integrity sha512-6mPTgLxYm3r6Bkkg0vNM0HTjfGrOEtsfbhagQvbxDEsEkpNhw582upBaoRZylzen6krEmxXJgt9Ju6HiI4O7BA==
+
+follow-redirects@^1.14.0:
+  version "1.14.4"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
+  integrity sha1-g4/fSKi73XnlLuUfsclOPtmLk3k=
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -5311,6 +7365,13 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
+
+graphql@14.0.0:
+  version "14.0.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/graphql/-/graphql-14.0.0.tgz#4ee771c5266d08cb75df2d3ac41e8dd51ce3d599"
+  integrity sha1-TudxxSZtCMt13y06xB6N1Rzj1Zk=
+  dependencies:
+    iterall "^1.2.2"
 
 growly@^1.3.0:
   version "1.3.0"
@@ -5623,6 +7684,11 @@ icss-utils@^4.0.0, icss-utils@^4.1.1:
   dependencies:
     postcss "^7.0.14"
 
+idb@5.0.6:
+  version "5.0.6"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/idb/-/idb-5.0.6.tgz#8c94624f5a8a026abe3bef3c7166a5febd1cadc1"
+  integrity sha1-jJRiT1qKAmq+O+88cWal/r0crcE=
+
 identity-obj-proxy@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/identity-obj-proxy/-/identity-obj-proxy-3.0.0.tgz#94d2bda96084453ef36fbc5aaec37e0f79f1fc14"
@@ -5630,7 +7696,7 @@ identity-obj-proxy@3.0.0:
   dependencies:
     harmony-reflect "^1.4.6"
 
-ieee754@^1.1.4:
+ieee754@^1.1.13, ieee754@^1.1.4:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
@@ -5654,6 +7720,11 @@ immer@8.0.1:
   version "8.0.1"
   resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
   integrity sha1-nHPbaD4rOXXEJPsFcq9YiYd65lY=
+
+immer@9.0.6:
+  version "9.0.6"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/immer/-/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
+  integrity sha1-epa/JnTQbIFD4yfL9zU5OI3fGnM=
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -6107,10 +8178,20 @@ is-wsl@^2.1.1, is-wsl@^2.2.0:
   dependencies:
     is-docker "^2.0.0"
 
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+  integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
+
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+
+isarray@^2.0.1:
+  version "2.0.5"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/isarray/-/isarray-2.0.5.tgz#8af1e4c1221244cc62459faf38940d4e644a5723"
+  integrity sha1-ivHkwSISRMxiRZ+vOJQNTmRKVyM=
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -6128,6 +8209,14 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
+
+isomorphic-unfetch@^3.0.0:
+  version "3.1.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/isomorphic-unfetch/-/isomorphic-unfetch-3.1.0.tgz#87341d5f4f7b63843d468438128cb087b7c3e98f"
+  integrity sha1-hzQdX097Y4Q9RoQ4Eoywh7fD6Y8=
+  dependencies:
+    node-fetch "^2.6.1"
+    unfetch "^4.2.0"
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -6174,6 +8263,11 @@ istanbul-reports@^3.0.2:
   dependencies:
     html-escaper "^2.0.0"
     istanbul-lib-report "^3.0.0"
+
+iterall@^1.2.2:
+  version "1.3.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
+  integrity sha1-r8sISS4pFcvYoIhOuTqMlNDXL+o=
 
 jest-changed-files@^26.6.2:
   version "26.6.2"
@@ -6625,6 +8719,11 @@ jest@26.6.0:
     import-local "^3.0.2"
     jest-cli "^26.6.0"
 
+js-cookie@^2.2.1:
+  version "2.2.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha1-aeEG3F1YBolFYpAqpbrsN0Tpsrg=
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -6772,6 +8871,11 @@ jsprim@^1.2.2:
   dependencies:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
+
+just-extend@^4.0.2:
+  version "4.2.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/just-extend/-/just-extend-4.2.1.tgz#ef5e589afb61e5d66b24eca749409a8939a8c744"
+  integrity sha1-715Ymvth5dZrJOynSUCaiTmox0Q=
 
 killable@^1.0.1:
   version "1.0.1"
@@ -6968,6 +9072,18 @@ loglevel@^1.6.8:
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.7.1.tgz#005fde2f5e6e47068f935ff28573e125ef72f197"
   integrity sha512-Hesni4s5UkWkwCGJMQGAh71PaLUmKFM60dHvq0zi/vDhhrzuk+4GgNbTXJ12YYQJn6ZKBDNIjYcuQGKudvqrIw==
 
+lolex@^4.2.0:
+  version "4.2.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/lolex/-/lolex-4.2.0.tgz#ddbd7f6213ca1ea5826901ab1222b65d714b3cd7"
+  integrity sha1-3b1/YhPKHqWCaQGrEiK2XXFLPNc=
+
+lolex@^5.0.1:
+  version "5.1.2"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/lolex/-/lolex-5.1.2.tgz#953694d098ce7c07bc5ed6d0e42bc6c0c6d5a367"
+  integrity sha1-lTaU0JjOfAe8XtbQ5CvGwMbVo2c=
+  dependencies:
+    "@sinonjs/commons" "^1.7.0"
+
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -7034,6 +9150,11 @@ map-cache@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/map-cache/-/map-cache-0.2.2.tgz#c32abd0bd6525d9b051645bb4f26ac5dc98a0dbf"
   integrity sha1-wyq9C9ZSXZsFFkW7TyasXcmKDb8=
+
+map-obj@^4.0.0:
+  version "4.3.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/map-obj/-/map-obj-4.3.0.tgz#9304f906e93faae70880da102a9f1df0ea8bb05a"
+  integrity sha1-kwT5Buk/qucIgNoQKp8d8OqLsFo=
 
 map-visit@^1.0.0:
   version "1.0.0"
@@ -7382,6 +9503,17 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
+nise@^1.5.2:
+  version "1.5.3"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/nise/-/nise-1.5.3.tgz#9d2cfe37d44f57317766c6e9408a359c5d3ac1f7"
+  integrity sha1-nSz+N9RPVzF3ZsbpQIo1nF06wfc=
+  dependencies:
+    "@sinonjs/formatio" "^3.2.1"
+    "@sinonjs/text-encoding" "^0.7.1"
+    just-extend "^4.0.2"
+    lolex "^5.0.1"
+    path-to-regexp "^1.7.0"
+
 no-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-3.0.4.tgz#d361fd5c9800f558551a8369fc0dcd4662b6124d"
@@ -7389,6 +9521,13 @@ no-case@^3.0.4:
   dependencies:
     lower-case "^2.0.2"
     tslib "^2.0.3"
+
+node-fetch@^2.6.1:
+  version "2.6.5"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/node-fetch/-/node-fetch-2.6.5.tgz#42735537d7f080a7e5f78b6c549b7146be1742fd"
+  integrity sha1-QnNVN9fwgKfl94tsVJtxRr4XQv0=
+  dependencies:
+    whatwg-url "^5.0.0"
 
 node-forge@^0.10.0:
   version "0.10.0"
@@ -7795,6 +9934,11 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
+paho-mqtt@^1.1.0:
+  version "1.1.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/paho-mqtt/-/paho-mqtt-1.1.0.tgz#8c10e29eb162e966fb15188d965c3dce505de9d9"
+  integrity sha1-jBDinrFi6Wb7FRiNllw9zlBd6dk=
+
 pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
@@ -7933,6 +10077,13 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
+path-to-regexp@^1.7.0:
+  version "1.8.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/path-to-regexp/-/path-to-regexp-1.8.0.tgz#887b3ba9d84393e87a0a0b9f4cb756198b53548a"
+  integrity sha1-iHs7qdhDk+h6CgufTLdWGYtTVIo=
+  dependencies:
+    isarray "0.0.1"
+
 path-type@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-2.0.0.tgz#f012ccb8415b7096fc2daa1054c3d72389594c73"
@@ -8022,6 +10173,11 @@ pkg-up@3.1.0:
   integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
   dependencies:
     find-up "^3.0.0"
+
+pngjs@^3.3.0:
+  version "3.4.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/pngjs/-/pngjs-3.4.0.tgz#99ca7d725965fb655814eaf65f38f12bbdbf555f"
+  integrity sha1-mcp9clll+2VYFOr2XzjxK72/VV8=
 
 pnp-webpack-plugin@1.6.4:
   version "1.6.4"
@@ -8882,6 +11038,19 @@ q@^1.1.2:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
+qrcode@^1.4.4:
+  version "1.4.4"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/qrcode/-/qrcode-1.4.4.tgz#f0c43568a7e7510a55efc3b88d9602f71963ea83"
+  integrity sha1-8MQ1aKfnUQpV78O4jZYC9xlj6oM=
+  dependencies:
+    buffer "^5.4.3"
+    buffer-alloc "^1.2.0"
+    buffer-from "^1.1.1"
+    dijkstrajs "^1.0.1"
+    isarray "^2.0.1"
+    pngjs "^3.3.0"
+    yargs "^13.2.4"
+
 qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
@@ -8924,6 +11093,11 @@ queue-microtask@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.2.tgz#abf64491e6ecf0f38a6502403d4cda04f372dfd3"
   integrity sha512-dB15eXv3p2jDlbOiNLyMabYg1/sXvppd8DP2J3EOCQ0AkuSXCW2tP7mnVouVLJKgUMY6yP0kcQDVpLCN13h4Xg==
+
+quick-lru@^4.0.1:
+  version "4.0.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
+  integrity sha1-W4h48ROlgheEjGSCAmxz4bpXcn8=
 
 raf@^3.4.1:
   version "3.4.1"
@@ -9027,6 +11201,13 @@ react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+
+react-native-get-random-values@^1.4.0:
+  version "1.7.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/react-native-get-random-values/-/react-native-get-random-values-1.7.0.tgz#86d9d1960828b606392dba4540bf760605448530"
+  integrity sha1-htnRlggotgY5LbpFQL92BgVEhTA=
+  dependencies:
+    fast-base64-decode "^1.0.0"
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -9836,6 +12017,19 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+sinon@^7.5.0:
+  version "7.5.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/sinon/-/sinon-7.5.0.tgz#e9488ea466070ea908fd44a3d6478fd4923c67ec"
+  integrity sha1-6UiOpGYHDqkI/USj1keP1JI8Z+w=
+  dependencies:
+    "@sinonjs/commons" "^1.4.0"
+    "@sinonjs/formatio" "^3.2.1"
+    "@sinonjs/samsam" "^3.3.3"
+    diff "^3.5.0"
+    lolex "^4.2.0"
+    nise "^1.5.2"
+    supports-color "^5.5.0"
+
 sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
@@ -10276,6 +12470,11 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
+strnum@^1.0.4:
+  version "1.0.4"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/strnum/-/strnum-1.0.4.tgz#e97e36a7d6ba9f93d0d6b496b2ed0678d422832b"
+  integrity sha1-6X42p9a6n5PQ1rSWsu0GeNQigys=
+
 style-loader@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-1.3.0.tgz#828b4a3b3b7e7aa5847ce7bae9e874512114249e"
@@ -10293,7 +12492,7 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-supports-color@^5.3.0:
+supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
@@ -10568,6 +12767,11 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
+
 tryer@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
@@ -10588,10 +12792,15 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.11.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.0.0, tslib@^2.3.0:
+  version "2.3.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
+  integrity sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE=
 
 tslib@^2.0.3:
   version "2.1.0"
@@ -10691,6 +12900,16 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+ulid@2.3.0:
+  version "2.3.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/ulid/-/ulid-2.3.0.tgz#93063522771a9774121a84d126ecd3eb9804071f"
+  integrity sha1-kwY1Incal3QSGoTRJuzT65gEBx8=
+
+unfetch@^4.2.0:
+  version "4.2.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/unfetch/-/unfetch-4.2.0.tgz#7e21b0ef7d363d8d9af0fb929a5555f6ef97a3be"
+  integrity sha1-fiGw7302PY2a8PuSmlVV9u+Xo74=
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
@@ -10754,6 +12973,14 @@ unique-string@^1.0.0:
   integrity sha1-nhBXzKhRq7kzmPizOuGHuZyuwRo=
   dependencies:
     crypto-random-string "^1.0.0"
+
+universal-cookie@^4.0.4:
+  version "4.0.4"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/universal-cookie/-/universal-cookie-4.0.4.tgz#06e8b3625bf9af049569ef97109b4bb226ad798d"
+  integrity sha1-BuizYlv5rwSVae+XEJtLsiateY0=
+  dependencies:
+    "@types/cookie" "^0.3.3"
+    cookie "^0.4.0"
 
 universalify@^0.1.0:
   version "0.1.2"
@@ -10877,12 +13104,17 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.3.2, uuid@^3.4.0:
+uuid@3.3.2:
+  version "3.3.2"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
+  integrity sha1-G0r0lV6zB3xQHCOHL8ZROBFYcTE=
+
+uuid@^3.0.0, uuid@^3.2.1, uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-uuid@^8.3.0:
+uuid@^8.2.0, uuid@^8.3.0, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
@@ -10983,6 +13215,11 @@ web-vitals@^1.0.1:
   version "1.1.2"
   resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/web-vitals/-/web-vitals-1.1.2.tgz#06535308168986096239aa84716e68b4c6ae6d1c"
   integrity sha1-BlNTCBaJhgliOaqEcW5otMaubRw=
+
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
 
 webidl-conversions@^5.0.0:
   version "5.0.0"
@@ -11129,6 +13366,14 @@ whatwg-mimetype@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz#3d4b1e0312d2079879f826aff18dbeeca5960fbf"
   integrity sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 whatwg-url@^8.0.0:
   version "8.4.0"
@@ -11426,7 +13671,7 @@ yargs-parser@^18.1.2:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs@^13.3.2:
+yargs@^13.2.4, yargs@^13.3.2:
   version "13.3.2"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.3.2.tgz#ad7ffefec1aa59565ac915f82dccb38a9c31a2dd"
   integrity sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==
@@ -11463,3 +13708,28 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zen-observable-ts@0.8.19:
+  version "0.8.19"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/zen-observable-ts/-/zen-observable-ts-0.8.19.tgz#c094cd20e83ddb02a11144a6e2a89706946b5694"
+  integrity sha1-wJTNIOg92wKhEUSm4qiXBpRrVpQ=
+  dependencies:
+    tslib "^1.9.3"
+    zen-observable "^0.8.0"
+
+zen-observable@^0.7.0:
+  version "0.7.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/zen-observable/-/zen-observable-0.7.1.tgz#f84075c0ee085594d3566e1d6454207f126411b3"
+  integrity sha1-+EB1wO4IVZTTVm4dZFQgfxJkEbM=
+
+zen-observable@^0.8.0:
+  version "0.8.15"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
+  integrity sha1-lkFcUS2OP/2SCv04iWBOMLnqrBU=
+
+zen-push@0.2.1:
+  version "0.2.1"
+  resolved "https://pkg.vimeows.com/artifactory/api/npm/npm/zen-push/-/zen-push-0.2.1.tgz#ddc33b90f66f9a84237d5f1893970f6be60c3c28"
+  integrity sha1-3cM7kPZvmoQjfV8Yk5cPa+YMPCg=
+  dependencies:
+    zen-observable "^0.7.0"
