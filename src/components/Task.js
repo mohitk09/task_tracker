@@ -1,4 +1,4 @@
-function Task({ task }) {
+function Task({ task, onTglStatus }) {
   return (
     <div className="card text-left" key={task.id}>
       <div className="row">
@@ -14,11 +14,12 @@ function Task({ task }) {
         </div>
 
         <div className="col-2 is-center">
-          <button className="button icon-only clear">
-            <img
-              src="https://icongr.am/feather/check-circle.svg?size=24&color=11d054"
-              alt="Open"
-            />
+          <button
+            className="button icon-only clear"
+            onClick={() => onTglStatus(task)}
+          >
+            {task.complete && "✅"}
+            {!task.complete && "⬜"}
           </button>
         </div>
         <div className="col-12">

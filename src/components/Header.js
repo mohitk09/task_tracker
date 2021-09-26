@@ -1,12 +1,8 @@
 function Header() {
   return (
     <div>
-      <nav className="nav">
-        <div className="nav-left">
-          <a className="brand" href="example.com">
-            Task Manager
-          </a>
-        </div>
+      <nav style={{ display: "flex", justifyContent: "center" }}>
+        <h1 style={{ marginLeft: "20px" }}>Task Manager</h1>
       </nav>
     </div>
   );

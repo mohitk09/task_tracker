@@ -1,14 +1,10 @@
 import Task from "./Task";
-function Tasks({ tasks }) {
+function Tasks({ tasks, onTglStatus }) {
   return (
-    <div className="row">
-      <div className="col-12 text-right">
-        <button className="button primary">New</button>
-      </div>
+    <div>
       {tasks.map((task) => (
-        <Task task={task} key={task.id} />
+        <Task task={task} key={task.id} onTglStatus={onTglStatus} />
       ))}
-      <div className="col-12"></div>
     </div>
   );
 }
