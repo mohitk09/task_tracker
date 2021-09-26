@@ -1,24 +1,27 @@
+import { useState } from "react";
 import { withAuthenticator } from "@aws-amplify/ui-react";
-import logo from "./logo.svg";
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 import "./App.css";
+import "./styles.css";
 
 function App() {
+  const [tasks, setTasks] = useState([
+    {
+      desc: "Learn React",
+      id: 1,
+      date: "2021-01-03 10:00",
+      status: "Complete",
+    },
+    { desc: "Profit", id: 2, date: "2021-01-05 15:00", status: "Open" },
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="container">
+        <Tasks tasks={tasks}></Tasks>
+      </div>
     </div>
   );
 }
