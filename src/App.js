@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { withAuthenticator } from "@aws-amplify/ui-react";
+import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import TaskEdit from "./components/TaskEdit";
