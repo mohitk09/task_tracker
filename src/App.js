@@ -5,6 +5,10 @@ import Tasks from "./components/Tasks";
 import TaskEdit from "./components/TaskEdit";
 import "./App.css";
 import "./styles.css";
+import Amplify, { API } from "aws-amplify";
+import awsconfig from "./aws-exports";
+
+Amplify.configure(awsconfig);
 
 function App() {
   const [tasks, setTasks] = useState([
