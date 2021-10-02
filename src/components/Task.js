@@ -1,6 +1,7 @@
 import ImageLibrary from './ImageLibrary';
+import { FaTrash } from 'react-icons/fa';
 
-function Task({ task, onTglStatus, images, onChangeImage }) {
+function Task({ task, onTglStatus, images, onChangeImage, deleteTask }) {
   return (
     <div className="card text-left" key={task.id}>
       <div className="row">
@@ -18,13 +19,14 @@ function Task({ task, onTglStatus, images, onChangeImage }) {
           </div>
         </div>
 
-        <div className="col-2 is-center">
+        <div className="col-2 left">
           <button
             className="button icon-only clear"
             onClick={() => onTglStatus(task)}
           >
             {task.status === 'complete' ? '✅' : '⬜'}
           </button>
+          <FaTrash onClick={() => deleteTask(task)}></FaTrash>
         </div>
         <div className="col-12">
           <p>{task.remarks}</p>

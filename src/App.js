@@ -34,6 +34,15 @@ function App() {
     setImages(imageList);
   };
 
+  const deleteTask = (task) => {
+    API.del('tracker', `/getdetails/object/${task.id}/${task.dueDate}`)
+      .then(() => {
+        const array = tasks.filter((element) => element.id !== task.id);
+        setTasks(array);
+      })
+      .catch((error) => console.log('Error while deleting task', error));
+  };
+
   useEffect(() => {
     setIsLoadingTasks(true);
     getData()
@@ -61,7 +70,7 @@ function App() {
     };
     API.post('tracker', '/getdetails', myInit)
       .then((res) => console.log('res', res))
-      .catch((err) => console.log('err', err));
+      .catch((err) => console.log('Error while saving task ', err));
   };
 
   const onTglStatus = (task) => {
@@ -122,6 +131,7 @@ function App() {
             onTglStatus={onTglStatus}
             images={images}
             onChangeImage={onChangeImage}
+            deleteTask={deleteTask}
           ></Tasks>
         </div>
       )}

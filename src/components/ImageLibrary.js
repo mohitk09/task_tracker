@@ -21,7 +21,6 @@ export default function ImageLibrary({ images, onChangeImage }) {
         isDragging,
         dragProps,
       }) => (
-        // write your building UI
         <div className="upload__image-wrapper">
           <button
             style={isDragging ? { color: 'red' } : undefined}
@@ -32,21 +31,26 @@ export default function ImageLibrary({ images, onChangeImage }) {
           </button>
           &nbsp;
           <button onClick={onImageRemoveAll}>Remove all images</button>
-          {imageList.map((image, index) => (
-            <div key={index} className="image-item">
-              <img src={image['data_url']} alt="" width="100" />
-              <div className="image-item__btn-wrapper">
-                <FaPaperclip
-                  onClick={() => onImageUpdate(index)}
-                  style={{ padding: '2px' }}
-                ></FaPaperclip>
-                <FaTrash
-                  onClick={() => onImageRemove(index)}
-                  style={{ padding: '2px' }}
-                ></FaTrash>
+          <div style={{ marginTop: '10px' }}>
+            {imageList.map((image, index) => (
+              <div key={index} className="image-item">
+                <img src={image['data_url']} alt="" width="150" height="150" />
+                <div className="image-item__btn-wrapper">
+                  <div>
+                    <span style={{ padding: '20px' }}>
+                      <FaPaperclip
+                        onClick={() => onImageUpdate(index)}
+                      ></FaPaperclip>
+                    </span>
+                    <span style={{ padding: '20px' }}>
+                      {' '}
+                      <FaTrash onClick={() => onImageRemove(index)}></FaTrash>
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
     </ImageUploading>

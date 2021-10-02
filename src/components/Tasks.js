@@ -1,5 +1,6 @@
 import Task from './Task';
-function Tasks({ tasks, onTglStatus, images, onChangeImage }) {
+
+function Tasks({ tasks, onTglStatus, images, onChangeImage, deleteTask }) {
   return (
     <div>
       {tasks.map((task) => (
@@ -10,6 +11,7 @@ function Tasks({ tasks, onTglStatus, images, onChangeImage }) {
             onTglStatus={onTglStatus}
             images={images}
             onChangeImage={onChangeImage}
+            deleteTask={deleteTask}
           />
         </>
       ))}
