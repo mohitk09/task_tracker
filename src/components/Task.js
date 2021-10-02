@@ -9,7 +9,7 @@ function Task({ task, onTglStatus }) {
               src="https://icongr.am/feather/calendar.svg?size=12&color=b5b5b5"
               alt="calendar"
             />
-            {task.date}
+            {task.dueDate}
           </div>
         </div>
 
@@ -18,8 +18,8 @@ function Task({ task, onTglStatus }) {
             className="button icon-only clear"
             onClick={() => onTglStatus(task)}
           >
-            {task.complete && "✅"}
-            {!task.complete && "⬜"}
+            {task.complete && '✅'}
+            {!task.complete && '⬜'}
           </button>
         </div>
         <div className="col-12">

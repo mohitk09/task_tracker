@@ -1,5 +1,7 @@
-import { useState } from 'react';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import { useState, useEffect } from 'react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import BeatLoader from 'react-spinners/BeatLoader';
+
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 import TaskEdit from './components/TaskEdit';
@@ -8,21 +10,29 @@ import './styles.css';
 import Amplify, { API } from 'aws-amplify';
 import awsconfig from './aws-exports';
 
+const getData = async () => {
+  try {
+    const resp = await API.get('tracker', '/getdetails');
+    return resp;
+  } catch (error) {
+    console.log('Error', error);
+  }
+};
+
 Amplify.configure(awsconfig);
 
-const getData = async () => {};
-
 function App() {
-  getData();
-  const [tasks, setTasks] = useState([
-    {
-      desc: 'Learn React',
-      id: 1,
-      date: '2021-01-03 10:00',
-      status: 'Complete',
-    },
-    { desc: 'Profit', id: 2, date: '2021-01-05 15:00', status: 'Open' },
-  ]);
+  const [tasks, setTasks] = useState([]);
+  const [isLoadingTasks, setIsLoadingTasks] = useState(false);
+
+  useEffect(() => {
+    setIsLoadingTasks(true);
+    getData()
+      .then((response) => {
+        setTasks(response);
+      })
+      .finally(() => setIsLoadingTasks(false));
+  }, []);
 
   const [showTaskEdit, setShowTaskEdit] = useState(false);
 
@@ -49,20 +59,27 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="container">
-        <div>
-          <button
-            className="button primary"
-            onClick={() => setShowTaskEdit(!showTaskEdit)}
-          >
-            {!showTaskEdit && 'Create new task'}
-            {showTaskEdit && '➖'}{' '}
-          </button>
-        </div>
-        {showTaskEdit && <TaskEdit task={{}} onSaveTask={onSaveTask} />}
+      {isLoadingTasks ? (
+        <>
+          <BeatLoader size={20} margin={2} color="#36D7B7" />
+          <h3>Fetching Details...</h3>
+        </>
+      ) : (
+        <div className="container">
+          <div>
+            <button
+              className="button primary"
+              onClick={() => setShowTaskEdit(!showTaskEdit)}
+            >
+              {!showTaskEdit && 'Create new task'}
+              {showTaskEdit && '➖'}{' '}
+            </button>
+          </div>
+          {showTaskEdit && <TaskEdit task={{}} onSaveTask={onSaveTask} />}
 
-        <Tasks tasks={tasks} onTglStatus={onTglStatus}></Tasks>
-      </div>
+          <Tasks tasks={tasks} onTglStatus={onTglStatus}></Tasks>
+        </div>
+      )}
     </div>
   );
 }
