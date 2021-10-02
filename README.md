@@ -28,6 +28,6 @@ Task screen in phone mode
 
 1. This application has a lot of scope remaning, currently a user can only lists tasks, update and modify. The tasks are not user specific, so possible improvement can be done there.
 2. Add Filter/Sort functionalities, store images on the backend, possibly S3 and a CDN could also come in picture while serving images.
-3. Swim lanes could be introduced which supports drag and drop.
+3. Swim lanes could be introduced which support drag and drop.
 4. Notifications can come in picture whenever a user transitions a ticket.
 5. And a lot more...
