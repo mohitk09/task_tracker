@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react';
 import { withAuthenticator } from '@aws-amplify/ui-react';
+import Amplify, { API } from 'aws-amplify';
 import BeatLoader from 'react-spinners/BeatLoader';
-
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 import TaskEdit from './components/TaskEdit';
+import awsconfig from './aws-exports';
 import './App.css';
 import './styles.css';
-import Amplify, { API } from 'aws-amplify';
-import awsconfig from './aws-exports';
 
 const getData = async () => {
   try {
@@ -36,24 +35,53 @@ function App() {
 
   const [showTaskEdit, setShowTaskEdit] = useState(false);
 
-  const onSaveTask = ({ desc, date }) => {
+  const onSaveTask = ({ desc, title }) => {
     console.log('saving tasks');
-    setTasks([
-      { desc: desc, date: date, id: Date.now(), complete: false },
-      ...tasks,
-    ]);
+    const task = {
+      desc,
+      dueDate: Date.now(),
+      id: Date.now(),
+      status: false,
+      title,
+    };
+    setTasks([task, ...tasks]);
     setShowTaskEdit(false);
+    const myInit = {
+      body: task,
+    };
+    API.post('tracker', '/getdetails', myInit)
+      .then((res) => console.log('res', res))
+      .catch((err) => console.log('err', err));
   };
 
   const onTglStatus = (task) => {
-    console.log('completing task');
-    setTasks(
-      tasks.map((chkTask) => {
-        chkTask.complete =
-          task.id === chkTask.id ? !chkTask.complete : chkTask.complete;
-        return chkTask;
-      })
-    );
+    console.log('toggling status of the task', task);
+
+    if (task.status === 'complete') {
+      const modifiedTasks = tasks.map((element) => {
+        if (element.id === task.id) {
+          element.status = 'open';
+        }
+        return element;
+      });
+      const myInit = {
+        body: task,
+      };
+      API.post('tracker', '/getdetails', myInit);
+      setTasks(modifiedTasks);
+    } else {
+      const modifiedTasks = tasks.map((element) => {
+        if (element.id === task.id) {
+          element.status = 'complete';
+        }
+        return element;
+      });
+      const myInit = {
+        body: task,
+      };
+      API.post('tracker', '/getdetails', myInit);
+      setTasks(modifiedTasks);
+    }
   };
 
   return (
@@ -75,7 +103,7 @@ function App() {
               {showTaskEdit && '➖'}{' '}
             </button>
           </div>
-          {showTaskEdit && <TaskEdit task={{}} onSaveTask={onSaveTask} />}
+          {showTaskEdit && <TaskEdit onSaveTask={onSaveTask} />}
 
           <Tasks tasks={tasks} onTglStatus={onTglStatus}></Tasks>
         </div>

@@ -1,15 +1,12 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-function TaskEdit({ task, onSaveTask }) {
-  const [desc, setDesc] = useState("");
-  const [date, setDate] = useState("");
+function TaskEdit({ onSaveTask }) {
+  const [desc, setDesc] = useState('');
+  const [title, setTitle] = useState('');
 
   const saveTask = (e) => {
     e.preventDefault();
-    onSaveTask({ desc: desc, date: date });
-
-    setDesc("");
-    setDate("");
+    onSaveTask({ desc: desc, title: title });
   };
   return (
     <div className="card">
@@ -24,13 +21,13 @@ function TaskEdit({ task, onSaveTask }) {
           onChange={(e) => setDesc(e.target.value)}
         />
 
-        <label htmlFor="date">Date</label>
+        <label htmlFor="title">title</label>
         <input
           type="text"
-          name="date"
-          id="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
+          name="title"
+          id="title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
         />
 
         <div className="text-right">

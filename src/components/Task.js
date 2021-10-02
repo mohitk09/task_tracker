@@ -21,8 +21,7 @@ function Task({ task, onTglStatus }) {
             className="button icon-only clear"
             onClick={() => onTglStatus(task)}
           >
-            {task.complete && '✅'}
-            {!task.complete && '⬜'}
+            {task.status === 'complete' ? '✅' : '⬜'}
           </button>
         </div>
         <div className="col-12">
