@@ -9,12 +9,14 @@ import awsconfig from './aws-exports';
 import './App.css';
 import './styles.css';
 
+/*  All the consoles have been put for demonstration purposes, should be replaced by a logger for a production application */
+
 const getData = async () => {
   try {
     const resp = await API.get('tracker', '/getdetails');
     return resp;
   } catch (error) {
-    console.log('Error', error);
+    console.log('Error while fetching data', error);
   }
 };
 
@@ -79,7 +81,9 @@ function App() {
       const myInit = {
         body: task,
       };
-      API.post('tracker', '/getdetails', myInit);
+      API.post('tracker', '/getdetails', myInit).catch((error) =>
+        console.log('Error while updating status', error)
+      );
       setTasks(modifiedTasks);
     }
   };
