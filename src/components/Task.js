@@ -1,4 +1,6 @@
-function Task({ task, onTglStatus }) {
+import ImageLibrary from './ImageLibrary';
+
+function Task({ task, onTglStatus, images, onChangeImage }) {
   return (
     <div className="card text-left" key={task.id}>
       <div className="row">
@@ -28,6 +30,7 @@ function Task({ task, onTglStatus }) {
           <p>{task.remarks}</p>
         </div>
       </div>
+      <ImageLibrary onChangeImage={onChangeImage} images={images} />
     </div>
   );
 }

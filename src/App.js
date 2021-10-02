@@ -26,6 +26,14 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [isLoadingTasks, setIsLoadingTasks] = useState(false);
 
+  const [images, setImages] = useState([]);
+
+  const onChangeImage = (imageList, addUpdateIndex) => {
+    // data for submit
+    console.log(imageList, addUpdateIndex);
+    setImages(imageList);
+  };
+
   useEffect(() => {
     setIsLoadingTasks(true);
     getData()
@@ -109,7 +117,12 @@ function App() {
           </div>
           {showTaskEdit && <TaskEdit onSaveTask={onSaveTask} />}
 
-          <Tasks tasks={tasks} onTglStatus={onTglStatus}></Tasks>
+          <Tasks
+            tasks={tasks}
+            onTglStatus={onTglStatus}
+            images={images}
+            onChangeImage={onChangeImage}
+          ></Tasks>
         </div>
       )}
     </div>
