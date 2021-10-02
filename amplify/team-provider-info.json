@@ -15,7 +15,7 @@
       "function": {
         "tracktasks": {
           "deploymentBucketName": "amplify-tasktracker-dev-195446-deployment",
-          "s3Key": "amplify-builds/tracktasks-6a494f58776c2f793135-build.zip"
+          "s3Key": "amplify-builds/tracktasks-665a4a34504e37727144-build.zip"
         }
       },
       "auth": {

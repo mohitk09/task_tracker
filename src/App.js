@@ -1,30 +1,33 @@
-import { useState } from "react";
-import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
-import Header from "./components/Header";
-import Tasks from "./components/Tasks";
-import TaskEdit from "./components/TaskEdit";
-import "./App.css";
-import "./styles.css";
-import Amplify, { API } from "aws-amplify";
-import awsconfig from "./aws-exports";
+import { useState } from 'react';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import Header from './components/Header';
+import Tasks from './components/Tasks';
+import TaskEdit from './components/TaskEdit';
+import './App.css';
+import './styles.css';
+import Amplify, { API } from 'aws-amplify';
+import awsconfig from './aws-exports';
 
 Amplify.configure(awsconfig);
 
+const getData = async () => {};
+
 function App() {
+  getData();
   const [tasks, setTasks] = useState([
     {
-      desc: "Learn React",
+      desc: 'Learn React',
       id: 1,
-      date: "2021-01-03 10:00",
-      status: "Complete",
+      date: '2021-01-03 10:00',
+      status: 'Complete',
     },
-    { desc: "Profit", id: 2, date: "2021-01-05 15:00", status: "Open" },
+    { desc: 'Profit', id: 2, date: '2021-01-05 15:00', status: 'Open' },
   ]);
 
   const [showTaskEdit, setShowTaskEdit] = useState(false);
 
   const onSaveTask = ({ desc, date }) => {
-    console.log("saving tasks");
+    console.log('saving tasks');
     setTasks([
       { desc: desc, date: date, id: Date.now(), complete: false },
       ...tasks,
@@ -33,7 +36,7 @@ function App() {
   };
 
   const onTglStatus = (task) => {
-    console.log("completing task");
+    console.log('completing task');
     setTasks(
       tasks.map((chkTask) => {
         chkTask.complete =
@@ -52,8 +55,8 @@ function App() {
             className="button primary"
             onClick={() => setShowTaskEdit(!showTaskEdit)}
           >
-            {!showTaskEdit && "Create new task"}
-            {showTaskEdit && "➖"}{" "}
+            {!showTaskEdit && 'Create new task'}
+            {showTaskEdit && '➖'}{' '}
           </button>
         </div>
         {showTaskEdit && <TaskEdit task={{}} onSaveTask={onSaveTask} />}
