@@ -2,8 +2,11 @@ function Task({ task, onTglStatus }) {
   return (
     <div className="card text-left" key={task.id}>
       <div className="row">
+        <div className="col-12" style={{ textAlign: 'center' }}>
+          <h4>{task.title}</h4>
+        </div>
         <div className="col-10">
-          <h4>{task.desc}</h4>
+          <h5>{task.desc}</h5>
           <div className="task-meta">
             <img
               src="https://icongr.am/feather/calendar.svg?size=12&color=b5b5b5"
